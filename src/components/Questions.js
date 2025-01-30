@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Questions.css";
 
 const Questions = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleAnswer = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="questions-main">
       <div className="q-top">
@@ -17,8 +23,11 @@ const Questions = () => {
         <div className="faq-card">
           {faqData.map((item, index) => (
             <div className="faq-item" key={index}>
-              <h3>{item.question}</h3>
-              <p>{item.answer}</p>
+              <div className="faq-question" onClick={() => toggleAnswer(index)}>
+                <h3>{item.question}</h3>
+                <span className="arrow">{openIndex === index ? "⌄" : "›"}</span>
+              </div>
+              {openIndex === index && <p>{item.answer}</p>}
             </div>
           ))}
         </div>
@@ -31,28 +40,28 @@ const faqData = [
   {
     question: "What is StartUp?",
     answer:
-      "StartUp is a platform designed to assist entrepreneurs with legal, business, and compliance needs, offering AI-powered updates and expert guidance.",
-  },
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+},
   {
     question: "How do I sign up?",
     answer:
-      "Signing up is easy! Click on 'Get Started', fill in your details, and start using our services immediately.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
   },
   {
     question: "Can I upgrade or downgrade my plan later?",
     answer:
-      "Yes, you can upgrade or downgrade your plan at any time through your account settings.",
-  },
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+},
   {
     question: "Is my business's data secure on this platform?",
     answer:
-      "Absolutely! We use industry-leading security protocols to keep your business data safe and encrypted.",
-  },
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+},
   {
     question: "How does the AI-powered legal update work?",
     answer:
-      "Our AI continuously scans legal updates and informs you of relevant changes that might impact your business.",
-  },
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+},
 ];
 
 export default Questions;

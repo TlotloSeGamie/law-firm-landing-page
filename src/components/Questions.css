@@ -8,6 +8,15 @@
     text-align: center;
   }
   
+  .q-top {
+    width: 100%;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
   .q-top h5 {
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -17,7 +26,7 @@
   }
   
   .q-top h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 15px;
   }
@@ -30,7 +39,7 @@
   
   .q-top p {
     font-size: 1.1rem;
-    max-width: 600px;
+    max-width: 800px;
     margin-bottom: 30px;
     color: #555;
   }
@@ -74,5 +83,23 @@
   
   .faq-card:hover {
     transform: translateY(-5px);
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    font-size: 2.5rem;
+    color: #555;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
   }
   

@@ -7,9 +7,9 @@ import Questions from './components/Questions';
 function App() {
   return (
     <div className="App">
-      {/* <Home />
+      <Home />
       <Features />
-      <Contact /> */}
+      <Contact />
       <Questions />
     </div>
   );
