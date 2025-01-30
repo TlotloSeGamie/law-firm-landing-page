@@ -1,0 +1,8 @@
+.per {
+    display: flex;
+}
+
+.per h5 {
+    display: flex;
+    justify-content: end;
+}
