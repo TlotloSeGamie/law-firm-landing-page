@@ -96,9 +96,11 @@ ul li {
 .right-socials {
     width: 99%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 20px;
     text-align: center;
+    align-items: center;
+
 }
 
 .right-socials p {
@@ -128,11 +130,10 @@ ul li {
 }
 
 .rights {
+    width: 60%;
     display: flex;
-    justify-content: center;
-    width: 89%;
-    left: 70px;
-    position: relative;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 @media screen and (max-width: 1024px) {
