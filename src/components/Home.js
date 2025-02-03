@@ -20,7 +20,9 @@ const Home = () => {
                             <a href="learn">Learn More</a>
                         </div>
                     </div>
-                    <h1>Image/ Icon</h1>
+                    <div className="image">
+                        <h1>Image/ Icon</h1>
+                    </div>
                 </div>
             </div>
         </div>
