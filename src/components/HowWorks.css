@@ -6,7 +6,6 @@
     align-items: center;
     background-color: #FFFFFF;
     text-align: center;
-    /* padding: 50px 20px; */
 }
 
 .how-container h5 {
@@ -69,4 +68,78 @@
 .step p {
     font-size: 18px;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .how-container h2 {
+        font-size: 28px;
+    }
+    .how-container p {
+        font-size: 16px;
+    }
+    .steps {
+        gap: 20px;
+    }
+    .step {
+        padding: 25px;
+        width: 32%;
+    }
+    .step h1 {
+        font-size: 60px;
+    }
+    .step h3 {
+        font-size: 22px;
+    }
+    .step p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .how-container h2 {
+        font-size: 24px;
+    }
+    .how-container p {
+        font-size: 14px;
+    }
+    .steps {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .step {
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+    }
+    .step h1 {
+        font-size: 50px;
+    }
+    .step h3 {
+        font-size: 20px;
+    }
+    .step p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .how-container h2 {
+        font-size: 20px;
+    }
+    .how-container p {
+        font-size: 13px;
+    }
+    .step {
+        width: 100%;
+        padding: 15px;
+    }
+    .step h1 {
+        font-size: 40px;
+    }
+    .step h3 {
+        font-size: 18px;
+    }
+    .step p {
+        font-size: 14px;
+    }
 }

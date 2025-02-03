@@ -5,6 +5,7 @@
     min-height: 70vh;
     background: linear-gradient(to bottom, #c0e7f769, #dabaf052);   
     padding: 20px;
+    width: 100%;
 }
 
 .home-container {
@@ -13,6 +14,9 @@
     text-align: center;
     border-radius: 20px;
     padding: 40px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 100%;
 }
 
 .content {
@@ -22,6 +26,7 @@
     flex-direction: column;
     align-items: start;
 }
+
 .main-text {
     width: 100%;
 }
@@ -31,7 +36,7 @@
     font-weight: bold;
     line-height: 1.4;
     text-align: left;
-    width: 58%
+    width: 100%; 
 }
 
 .main-text span {
@@ -43,7 +48,7 @@
     margin: 20px 0;
     opacity: 0.9;
     text-align: left;
-    width: 70%;
+    width: 100%; 
 }
 
 .start-learn-btn {
@@ -52,6 +57,7 @@
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap; 
 }
 
 .get-started-btn {
@@ -64,6 +70,7 @@
     border: none;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    white-space: nowrap; 
 }
 
 .get-started-btn:hover {
@@ -83,4 +90,30 @@
 
 .start-learn-btn a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .main-text h2 {
+        font-size: 1.8rem; 
+    }
+
+    .start-learn-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-started-btn {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .start-learn-btn a {
+        width: 100%;
+        text-align: center;
+    }
 }

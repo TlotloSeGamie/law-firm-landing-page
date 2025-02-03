@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* max-width: 1200px; */
     padding: 40px;
     margin: auto;
 }
@@ -42,7 +41,6 @@ ul li {
     margin: 5px 0;
 }
 
-
 .subscription {
     text-align: center;
     width: 30%;
@@ -54,7 +52,6 @@ ul li {
     font-size: 20px;
     font-weight: bold;
     color: #000000;
-    /* margin-bottom: 15px; */
 }
 
 .subscribe {
@@ -96,7 +93,6 @@ ul li {
     transform: translateY(-3px);
 }
 
-
 .right-socials {
     width: 99%;
     display: flex;
@@ -137,4 +133,94 @@ ul li {
     width: 89%;
     left: 70px;
     position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        padding: 30px;
+    }
+    .logo, .navigation, .utilities, .subscribe {
+        width: 20%;
+        min-width: 200px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p, ul {
+        font-size: 13px;
+    }
+    .subscription {
+        width: 40%;
+    }
+    .subscribe input {
+        font-size: 12px;
+    }
+    .sub-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .social-icons {
+        width: 15%;
+    }
+    .social-icon {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo, .navigation, .utilities, .subscribe {
+        width: 90%;
+        text-align: center;
+    }
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe input {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .subscription {
+        width: 80%;
+    }
+    .sub-btn {
+        width: 100%;
+    }
+    .right-socials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-main {
+        padding: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p, ul {
+        font-size: 12px;
+    }
+    .subscription {
+        width: 100%;
+    }
+    .subscribe input {
+        font-size: 12px;
+    }
+    .sub-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    .social-icon {
+        font-size: 16px;
+    }
 }

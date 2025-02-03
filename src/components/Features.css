@@ -47,7 +47,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 70px;
+    gap: 50px; 
 }
 
 .features-nav li {
@@ -84,4 +84,67 @@
     font-size: 0.95rem;
     opacity: 0.9;
     line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .texts h1 {
+        font-size: 2rem;
+    }
+    .features-nav ul {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .features-main {
+        padding: 40px 15px;
+    }
+    .texts h1 {
+        font-size: 1.8rem;
+    }
+    .texts p {
+        font-size: 0.95rem;
+    }
+    .features-nav ul {
+        gap: 30px;
+    }
+    .features-nav li {
+        padding: 15px;
+    }
+    .features-nav li svg {
+        font-size: 1.8rem;
+        padding: 8px;
+    }
+    .features-nav span {
+        font-size: 1rem;
+    }
+    .features-nav p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .texts h1 {
+        font-size: 1.6rem;
+    }
+    .texts p {
+        font-size: 0.9rem;
+    }
+    .features-nav ul {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .features-nav li {
+        padding: 10px;
+    }
+    .features-nav li svg {
+        font-size: 1.6rem;
+        padding: 6px;
+    }
+    .features-nav span {
+        font-size: 0.9rem;
+    }
+    .features-nav p {
+        font-size: 0.85rem;
+    }
 }

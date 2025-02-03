@@ -167,3 +167,88 @@
 .sign-up:hover {
     background: #002D72;
 }
+
+@media screen and (max-width: 1024px) {
+    .pricing-container {
+        max-width: 900px;
+    }
+    .pricing-top h2 {
+        font-size: 28px;
+    }
+    .prices {
+        gap: 20px;
+    }
+    .pricing-card {
+        width: 280px;
+        padding: 25px;
+    }
+    .per h2 {
+        font-size: 28px;
+    }
+    .per h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-container {
+        max-width: 90%;
+    }
+    .pricing-top h2 {
+        font-size: 24px;
+    }
+    .pricing-top p {
+        font-size: 14px;
+    }
+    .prices {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .pricing-card {
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+    }
+    .per h2 {
+        font-size: 26px;
+    }
+    .per h4 {
+        font-size: 15px;
+    }
+    .sign-up {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pricing-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .pricing-top h2 {
+        font-size: 20px;
+    }
+    .pricing-top p {
+        font-size: 13px;
+    }
+    .pricing-card {
+        width: 100%;
+        padding: 15px;
+    }
+    .per h2 {
+        font-size: 24px;
+    }
+    .per h4 {
+        font-size: 14px;
+    }
+    .price-content ul li {
+        font-size: 14px;
+    }
+    .sign-up {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+}
