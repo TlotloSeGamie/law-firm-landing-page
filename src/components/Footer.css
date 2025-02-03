@@ -7,20 +7,22 @@
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    padding: 40px;
     margin: auto;
 }
 
 .logo, .navigation, .utilities, .subscribe {
-    width: 23%;
+    width: 13%;
     min-width: 250px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
     color: #000000;
 }
@@ -41,34 +43,61 @@ ul li {
 }
 
 
-.subscribe input {
-    width: 100%;
-    padding: 8px;
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
-    color: #FFFFFF;
-    border-radius: 5px;
-    outline: none;
-    margin-bottom: 10px;
-}
-.subscribe {
-    display: flex;
-    height:5vh;
-}
-.sub-btn {
-    height: 4vh;
-}
-.subscribe .sub-btn {
-    background-color: #159cf7;
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+.subscription {
+    text-align: center;
+    width: 30%;
+    min-width: 300px;
 }
 
-.rite-socials {
+.subscription h4 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    /* margin-bottom: 15px; */
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    width: 100%;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+.subscribe input::placeholder {
+    color: #888;
+}
+
+.subscribe .sub-btn {
+    background: #159cf7;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+.sub-btn:hover {
+    background: #005bb5;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+
+.right-socials {
     width: 99%;
     display: flex;
     justify-content: center;
@@ -76,14 +105,15 @@ ul li {
     text-align: center;
 }
 
-.rite-socials p {
+.right-socials p {
     font-size: 14px;
     margin-bottom: 10px;
 }
 
 .social-icons {
+    width: 10%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 15px;
     color: #000000;
 }
@@ -99,4 +129,12 @@ ul li {
 
 .social-icon:hover {
     transform: scale(1.2);
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    width: 89%;
+    left: 70px;
+    position: relative;
 }

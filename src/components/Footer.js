@@ -10,9 +10,6 @@ const Footer = () => {
           <h4 className="logo-text">LOGO P/UM</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
         <div className="navigation">
@@ -34,17 +31,22 @@ const Footer = () => {
                 <li>Universe</li>
             </ul>
         </div>
-        <div className="subscribe">
-            <input
-                id="subname"
-                placeholder="enter your name"
-            />
-            <button className="sub-btn">Subscribe</button>
+        <div className="subscription">
+          <h4>Subscribe to our news letter</h4>
+            <div className="subscribe">
+              <input
+                  id="subname"
+                  placeholder="enter your name"
+              />
+              <button className="sub-btn">Subscribe</button>
+            </div>
         </div>
       </div>
       
-      <div className="rite-socials">
-        <p>© 2024 Your Company. All rights reserved.</p>
+      <div className="right-socials">
+        <div className="rights">
+          <p>© 2024 Your Company. All rights reserved.</p>
+        </div>
         <div className="social-icons">
           <a href="#" className="social-icon"><FaFacebookF /></a>
           <a href="#" className="social-icon"><FaTwitter /></a>
