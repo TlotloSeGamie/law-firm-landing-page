@@ -1,40 +1,39 @@
 .nav-main-container {
     width: 100%;
-    background: #ffffff00;
-    padding: 15px 0;
+    padding: 1vw 0;
     position: relative;
     top: 0;
     left: 0;
     z-index: 1000;
-    background: #c0e7f769;
+    background: rgba(192, 231, 247, 0.41);
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1800px;
+    max-width: 95vw;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2vw;
 }
 
 .logo-text {
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 4vw, 1.8rem);
     font-weight: bold;
     color: #159cf7;
 }
 
 .nav-links {
     display: flex;
-    gap: 50px;
-    font-size: 50px;
-    left: 9rem;
+    gap: clamp(20px, 5vw, 50px);
+    font-size: clamp(14px, 3vw, 50px);
+    left: 9vw;
     position: relative;
 }
 
 .nav-item {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
     color: #333;
     transition: color 0.3s ease-in-out;
 }
@@ -47,18 +46,18 @@
     background: #159cf7;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: clamp(5px, 1vw, 10px) clamp(10px, 2vw, 20px);
+    font-size: clamp(0.8rem, 2vw, 1rem);
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
 
 .try-btn:hover {
-    background: #005bb5; 
-    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.3); 
-    transform: translateY(-3px); 
-    transition: all 0.3s ease-in-out; 
+    background: #005bb5;
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-item.active {
@@ -68,35 +67,36 @@
 
 .menu-icon {
     display: none;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
     cursor: pointer;
     color: #159cf7;
 }
 
 @media screen and (max-width: 1024px) {
     .logo-text {
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
     }
     .nav-links {
-        gap: 40px;
-        font-size: 40px;
-        left: 5rem;
+        gap: clamp(15px, 4vw, 40px);
+        left: 5vw;
     }
     .nav-item {
-        font-size: 0.9rem;
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
     }
     .try-btn {
-        padding: 8px 18px;
-        font-size: 0.9rem;
+        padding: clamp(6px, 1.5vw, 8px) clamp(12px, 2vw, 18px);
+        font-size: clamp(0.75rem, 1.5vw, 0.9rem);
     }
 }
 
 @media screen and (max-width: 768px) {
     .nav-container {
-        padding: 0 15px;
+        padding: 0 3vw;
     }
     .menu-icon {
         display: block;
+        background-color: aliceblue
+        ;
     }
     .nav-links {
         position: absolute;
@@ -104,42 +104,42 @@
         left: 0;
         width: 100%;
         flex-direction: column;
-        background: #fff;
+        background-color: linear-gradient(to bottom, #c0e7f769, #dabaf052);   
         text-align: center;
-        gap: 15px;
-        font-size: 30px;
+        gap: clamp(10px, 2.5vw, 15px);
         padding: 15px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
         display: none;
+        backdrop-filter: blur(70px);
     }
     .nav-links.open {
         display: flex;
     }
     .nav-item {
-        font-size: 1rem;
+        font-size: clamp(0.8rem, 2.5vw, 1rem);
         padding: 10px 0;
     }
     .try-btn {
-        padding: 7px 16px;
-        font-size: 0.85rem;
+        padding: clamp(5px, 1.2vw, 7px) clamp(10px, 2vw, 16px);
+        font-size: clamp(0.7rem, 1.5vw, 0.85rem);
     }
 }
 
 @media screen and (max-width: 480px) {
     .logo-text {
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 3vw, 1.2rem);
     }
     .menu-icon {
-        font-size: 1.8rem;
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
     }
     .nav-links {
-        font-size: 25px;
+        font-size: clamp(14px, 3vw, 25px);
     }
     .nav-item {
-        font-size: 0.85rem;
+        font-size: clamp(0.7rem, 2vw, 0.85rem);
     }
     .try-btn {
-        padding: 6px 14px;
-        font-size: 0.8rem;
+        padding: clamp(4px, 1vw, 6px) clamp(8px, 2vw, 14px);
+        font-size: clamp(0.65rem, 1.5vw, 0.8rem);
     }
 }

@@ -1,7 +1,7 @@
 import { React, useState } from "react";
-import "./Questions.css";
+import "./FAQ.css";
 
-const Questions = () => {
+const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAnswer = (index) => {
@@ -64,4 +64,4 @@ const faqData = [
 },
 ];
 
-export default Questions;
+export default FAQ;
