@@ -16,7 +16,7 @@
 
 .texts h5 {
     font-size: 1.2rem;
-    color: #159cf7;
+    color: #0D99FF;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -30,7 +30,7 @@
 }
 
 .texts span {
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .texts p {
@@ -77,7 +77,7 @@
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .features-nav p {

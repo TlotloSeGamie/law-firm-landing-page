@@ -13,7 +13,7 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .how-container h2 {
@@ -23,7 +23,7 @@
 }
 
 .how-container h2 span {
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .how-container p {
@@ -56,14 +56,14 @@
 .step h1 {
     font-size: 70px;
     margin-bottom: 10px;
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .step h3 {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .step p {

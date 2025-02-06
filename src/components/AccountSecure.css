@@ -26,7 +26,7 @@
 
 .logo-line h3 {
     font-size: 1.5rem;
-    color: #159cf7;
+    color: #0D99FF;
     font-weight: bold;
 }
 
@@ -36,14 +36,14 @@
 }
 
 .logo-line a {
-    color: #159cf7;
+    color: #0D99FF;
     text-decoration: none;
     font-weight: bold;
 }
 
 h1 {
     font-size: 2.1rem;
-    /* color: #159cf7; */
+    /* color: #0D99FF; */
 }
 
 .secure-container
@@ -82,7 +82,7 @@ h1 {
 }
 
 .passwords input:hover {
-    border: 2px solid #159cf7;
+    border: 2px solid #0D99FF;
 }
 
 .password-field {
@@ -106,7 +106,7 @@ h1 {
 
 .sign-up {
     width: 100%;
-    background-color: #0f7ad1;
+    background-color: #0D99FF;
     color: white;
     padding: 18px;
     border: none;
@@ -140,7 +140,7 @@ h1 {
 }
 
 .image-container h2 {
-    color: #159cf7;
+    color: #0D99FF;
     width: 70%;
     font-size: 48px;
     margin-bottom: 20px;
@@ -154,7 +154,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: white;
-    color: #159cf7;
+    color: #0D99FF;
     font-size: 20px;
     font-weight: bold;
     border-radius: 12px;

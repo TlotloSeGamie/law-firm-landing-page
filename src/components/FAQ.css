@@ -50,7 +50,7 @@
 
 .faq-item {
   background-color: white;
-  color: #159cf7;
+  color: #0D99FF;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 15px;
@@ -76,7 +76,7 @@
 
 .faq-card {
   background-color: white;
-  color: #159cf7;
+  color: #0D99FF;
   border-radius: 10px;
   padding: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;

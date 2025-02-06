@@ -16,19 +16,19 @@ import AccountSecure from './components/AccountSecure';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+    {/*  <Navbar />
       <Home />
      <Features />
        <Pricing />
       <HowWorks />
       <FAQ /> 
       <Contact />
-      <Footer />
-     {/* <StartUp />
+      <Footer />*/}
+      <StartUp />
       <StarterPlan /> 
       <SignIn />
       <SubscriptionPlan /> 
-      <AccountSecure />  */}
+      <AccountSecure />  
     </div>
   );
 }
