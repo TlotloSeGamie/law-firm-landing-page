@@ -1,7 +1,7 @@
 import React from "react";
 import './SignIn.css';
 import { FcGoogle } from "react-icons/fc";
-import EffortIn from '../assets/effortin.png';
+import EffortIn from '../assets/welcome.png';
 
 
 const SignIn = () => {

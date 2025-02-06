@@ -1,5 +1,6 @@
 import React from "react";
 import './Home.css';
+import contract from '../assets/undraw_contract_upwc 1.png';
 
 
 const Home = () => {
@@ -19,7 +20,8 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="image">
-                        <h1>Image/ Icon</h1>
+                        {/* <h1>Image/ Icon</h1> */}
+                        <img src={contract} alt="Contract" />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa"; 
+import logo from '../assets/Frame.png';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -10,7 +11,7 @@ const Navbar = () => {
     <nav className="nav-main-container">
       <div className="nav-container">
         <div className="logo">
-          <h3 className="logo-text">LOGO P/UM</h3>
+          <img src={logo} alt="Logo" />
         </div>
 
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>

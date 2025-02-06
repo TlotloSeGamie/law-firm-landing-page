@@ -80,8 +80,8 @@ const SubscriptionPlan = () => {
                                 <div className="plans-zar">
                                     <label for="basic">
                                         <div className="p-texts">
-                                            <p className="p-one">Basic plan</p>
-                                            <p className="p-two">R499/month</p>
+                                            <p className="p-one"><span>Basic plan </span>
+                                                R499/month</p>
                                         </div>
                                     </label>
                                 </div>
@@ -98,8 +98,8 @@ const SubscriptionPlan = () => {
                                 <div className="plans-zar">
                                     <label for="professional">
                                         <div className="p-texts">
-                                            <p className="p-one">Professional plan</p>
-                                            <p className="p-two">R499/month</p>
+                                            <p className="p-one"><span>Professional plan </span>
+                                                R499/month</p>
                                         </div>
                                     </label>
                                 </div>
@@ -116,8 +116,8 @@ const SubscriptionPlan = () => {
                                 <div className="plans-zar">
                                     <label for="enterprise">
                                         <div className="p-texts">
-                                            <p className="p-one">Enterprise plan</p>
-                                            <p className="p-two">R499/month</p>
+                                            <p className="p-one"><span>Enterprise plan </span> 
+                                                R499/month</p>
                                         </div>
                                     </label>
                                 </div>

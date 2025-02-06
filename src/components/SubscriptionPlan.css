@@ -16,7 +16,7 @@
     max-width: 2000px;
     overflow: hidden;
     gap: 50px;
-    flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
+    flex-wrap: wrap; 
 }
 
 .subscription-container,
@@ -29,12 +29,10 @@
     justify-content: center;
 }
 
-/* Ensure content scales properly on smaller screens */
 .subscription-container {
     padding: 20px;
 }
 
-/* Header adjustments */
 .logoipsum h3 {
     color: #159cf7;
     font-size: 24px;
@@ -52,7 +50,6 @@
     color: #686868;
 }
 
-/* Bill input styling */
 .bill input {
     width: 100%;
     padding: 20px;
@@ -82,11 +79,10 @@
     pointer-events: none;
 }
 
-/* Expiry date and CVV input fields */
 .expire {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* Allow wrapping of inputs on small screens */
+    gap: 70px;
+    flex-wrap: wrap;
 }
 
 .expire-field {
@@ -99,7 +95,6 @@
     margin-top: 5px;
 }
 
-/* Subscribe button */
 .subscribe-btn {
     width: 100%;
     background-color: #0f7ad1;
@@ -128,7 +123,6 @@
     color: #686868;
 }
 
-/* Subscription Plan Section */
 .subscription-planning {
     background: linear-gradient(to bottom, #c0e7f769, #dabaf052);   
     border-radius: 12px; 
@@ -136,7 +130,6 @@
     padding: 40px;
 }
 
-/* Plan Headers */
 .subscription-plan h4 {
     font-size: 24px;
     font-weight: bold;
@@ -155,7 +148,6 @@
     align-items: center;
 }
 
-/* Plan options layout */
 .plans {
     display: flex;
     border: 2px solid #686868;
@@ -166,6 +158,7 @@
     cursor: pointer; 
     color: #fff;
     background-color: #fff;
+    padding: 8px;
 }
 
 .plans:hover {
@@ -181,15 +174,22 @@
 }
 
 .p-one {
-    font-size: 18px; 
+    font-size: 10px; 
     font-weight: bold;
     color: #000000;
 }
 
-.p-two {
+.p-one span {
+    color: #000;
+    font-weight: bold;
     font-size: 16px;
-    color: #686868;
+}
+
+.p-one {
+    width: 80%;
+    color: #686868;    
     margin-top: 5px; 
+
 }
 
 .subscription-features h4 {
@@ -212,7 +212,6 @@
     color: #159cf7;
 }
 
-/* ✔ inside circle */
 .subscription-features li::before {
     content: "✔";
     color: #159cf7;
@@ -221,7 +220,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 2px solid #159cf7;  /* General adjustments */
+    border: 2px solid #159cf7; 
     .subscription-main {
         display: flex;
         justify-content: center;
@@ -240,7 +239,7 @@
         max-width: 2000px;
         overflow: hidden;
         gap: 50px;
-        flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
+        flex-wrap: wrap;
     }
     
     .subscription-container,
@@ -253,12 +252,10 @@
         justify-content: center;
     }
     
-    /* Ensure content scales properly on smaller screens */
     .subscription-container {
         padding: 20px;
     }
     
-    /* Header adjustments */
     .logoipsum h3 {
         color: #159cf7;
         font-size: 24px;
@@ -276,7 +273,6 @@
         color: #686868;
     }
     
-    /* Bill input styling */
     .bill input {
         width: 100%;
         padding: 20px;

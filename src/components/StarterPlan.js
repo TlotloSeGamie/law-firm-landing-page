@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./StarterPlan.css";
-import Empower from '../assets/empower.png';
+import Empower from '../assets/business.png';
 
 const StarterPlan = () => {
   const [formData, setFormData] = useState({
