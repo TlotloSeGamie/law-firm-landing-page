@@ -2,33 +2,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #f4f4f4;
     padding: 20px;
 }
 
 .subscription-main-container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 1000px;
-    overflow: hidden;
+    /* width: 80%; */
+    /* max-width: 1000px; */
+    /* overflow: hidden; */
 }
 
-.subscription-container {
+.subscription-container { 
     flex: 1;
     padding: 40px;
-    background-color: #159cf7;
-    color: white;
+    background-color: #ffffff;
+    /* color: rgb(78, 77, 77); */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .logoipsum h3 {
+    color: #159cf7;
     font-size: 24px;
     font-weight: bold;
 }
@@ -40,7 +41,7 @@
 
 .logoipsum p {
     font-size: 16px;
-    color: #eaeaea;
+    color: #686868;
 }
 
 .bill {
@@ -52,6 +53,7 @@
     font-size: 14px;
     font-weight: bold;
     margin: 8px 0 4px;
+    color: #686868;
 }
 
 .bill input {
@@ -60,11 +62,17 @@
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.bill input:hover {
+    border: 2px solid #159cf7;
 }
 
 .expire {
     display: flex;
     gap: 15px;
+    cursor: pointer;
 }
 
 .expire input {
