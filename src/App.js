@@ -18,17 +18,17 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
-     {/* <Features />
-      <Contact />
-      <FAQ />
-       <Pricing />  */}
+     <Features />
+       <Pricing />
       <HowWorks />
-      {/* <Footer /> */}
+      <FAQ /> 
+      <Contact />
+      <Footer />
      {/* <StartUp />
       <StarterPlan /> 
       <SignIn />
       <SubscriptionPlan /> 
-      <AccountSecure />*/}
+      <AccountSecure />  */}
     </div>
   );
 }

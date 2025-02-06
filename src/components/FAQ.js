@@ -25,7 +25,7 @@ const FAQ = () => {
             <div className="faq-item" key={index}>
               <div className="faq-question" onClick={() => toggleAnswer(index)}>
                 <h3>{item.question}</h3>
-                <span className="arrow">{openIndex === index ? "⌄" : "›"}</span>
+                <span className="arrow">{openIndex === index ? "v" : "›"}</span>
               </div>
               {openIndex === index && <p>{item.answer}</p>}
             </div>
@@ -40,7 +40,7 @@ const faqData = [
   {
     question: "What is StartUp?",
     answer:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+    "StartUp Legal is a legaltech platform designed to simplify the legal compliance process for South African SMEs. It offers automated compliance tracking, document generation, CIPC integration, AI-powered legal updates, and more.",
 },
   {
     question: "How do I sign up?",

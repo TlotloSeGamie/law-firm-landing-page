@@ -1,15 +1,17 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"; 
 import "./Footer.css";
+import logo from '../assets/Frame.png';
+
 
 const Footer = () => {
   return (
     <div className="footer-main">
       <div className="footer-container">
         <div className="logo">
-          <h4 className="logo-text">LOGO P/UM</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          {/* <h4 className="logo-text">LOGO P/UM</h4> */}
+          <img src={logo} alt="Logo" />
+          <p>Our mission is to empower South African SMEs with accessible, affordable, and efficient legal solutions, driving seamless compliance and business growth. 
           </p>
         </div>
         <div className="navigation">
@@ -32,7 +34,7 @@ const Footer = () => {
             </ul>
         </div>
         <div className="subscription">
-          <h4>Subscribe to our news letter</h4>
+          <h4>Subscribe to our news letter.</h4>
             <div className="subscribe">
               <input
                   id="subname"
@@ -42,10 +44,10 @@ const Footer = () => {
             </div>
         </div>
       </div>
-      
+        <div className="border"></div>
       <div className="right-socials">
         <div className="rights">
-          <p>© 2024 Your Company. All rights reserved.</p>
+          <p>copyright 2025 start up</p>
         </div>
         <div className="social-icons">
           <a href="#" className="social-icon"><FaFacebookF /></a>
