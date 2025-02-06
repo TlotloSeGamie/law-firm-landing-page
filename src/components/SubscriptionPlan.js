@@ -25,77 +25,114 @@ const SubscriptionPlan = () => {
                                 required
                             />
                         <label htmlFor="card-number">Card Number</label>
+                        <div className="input-container">
+                            <svg className="card-icon" width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="24" r="14" fill="#EA001B" />
+                                <circle cx="32" cy="24" r="14" fill="#FFA200" fillOpacity="0.8 " />
+                            </svg>
                             <input
                                 type="text"
                                 name="card-number"
                                 placeholder="Enter Card Number"
                                 required
                             />
-                        <div className="expire">
-                            <label htmlFor="expiration-date">Expiration Date</label>
-                                <input
-                                    type="text"
-                                    name="expiration-date"
-                                    placeholder="MM/YY"
-                                    required
-                                />
-                            <label htmlFor="cvv">CVV</label>
-                                <input
-                                    type="text"
-                                    name="cvv"
-                                    placeholder="000"
-                                    required
-                                />
                         </div>
+                        <div className="expire">
+                        <div className="expire-field">
+                            <label htmlFor="expiration-date">Expiration Date</label>
+                            <input
+                                type="text"
+                                name="expiration-date"
+                                placeholder="MM/YY"
+                                required
+                            />
+                        </div>
+                        <div className="expire-field">
+                            <label htmlFor="cvv">CVV</label>
+                            <input
+                                type="text"
+                                name="cvv"
+                                placeholder="000"
+                                required
+                            />
+                        </div>
+                    </div>
+
                     </div>
                     <div className="subscription-btn">
                         <button className="subscribe-btn">Subscribe</button>
                         <p>By providing your card information,you allow us to charg your card for future payments in accordance with their terms.</p>
                     </div>
                 </div>
-                <div className="subscription-plan">
-                    <h4>Starter plan</h4>
-                    <div className="starter-plans">
-                        <input 
-                            type="radio"
-                            id="basic"
-                            name="basic"
-                            value="basic"
-                        />
-                        <label for="basic">
-                            Basic plan
-                            <p>R499/month</p>
-                        </label>
-                        <input 
-                            type="radio"
-                            id="professional"
-                            name="professional"
-                            value="professional"
-                        />
-                        <label for="professional">
-                            Professional plan
-                            <p>R499/month</p>
-                        </label>
-                        <input 
-                            type="radio"
-                            id="enterprise"
-                            name="enterprise"
-                            value="enterprise"
-                        />
-                        <label for="enterprise">
-                            Enterprise plan
-                            <p>R499/month</p>
-                        </label>
-                    </div>
-                    <div className="border"></div>
-                    <div className="subscription-features">
-                        <h4>Features</h4>
-                        <ul>
-                            <li>Priority CIPC services.</li>
-                            <li>5 Digital certifications/ commissioning per month.</li>
-                            <li>Education resources.</li>
-                            <li>Advanced compliance tracking tools.</li>
-                        </ul>
+                <div className="subscription-planning">
+                    <div className="subscription-plan">
+                        <h4>Starter plan</h4>
+                        <div className="starter-plans">
+                            <div className="plans">
+                                <div className="plans-zar">
+                                    <input
+                                        type="radio"
+                                        id="basic"
+                                        name="basic"
+                                        value="basic"
+                                    />
+                                </div>
+                                <div className="plans-zar">
+                                    <label for="basic">
+                                        <div className="p-texts">
+                                            <p className="p-one">Basic plan</p>
+                                            <p className="p-two">R499/month</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div className="plans">
+                                <div className="radio-check">
+                                    <input
+                                        type="radio"
+                                        id="professional"
+                                        name="professional"
+                                        value="professional"
+                                    />
+                                </div>
+                                <div className="plans-zar">
+                                    <label for="professional">
+                                        <div className="p-texts">
+                                            <p className="p-one">Professional plan</p>
+                                            <p className="p-two">R499/month</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div className="plans">
+                                <div className="radio-check">
+                                    <input
+                                        type="radio"
+                                        id="enterprise"
+                                        name="enterprise"
+                                        value="enterprise"
+                                    />
+                                </div>
+                                <div className="plans-zar">
+                                    <label for="enterprise">
+                                        <div className="p-texts">
+                                            <p className="p-one">Enterprise plan</p>
+                                            <p className="p-two">R499/month</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="border"></div>
+                        <div className="subscription-features">
+                            <h4>Features</h4>
+                            <ul>
+                                <li>Priority CIPC services.</li>
+                                <li>5 Digital certifications/ commissioning per month.</li>
+                                <li>Education resources.</li>
+                                <li>Advanced compliance tracking tools.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

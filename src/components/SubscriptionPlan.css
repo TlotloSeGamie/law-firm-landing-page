@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    height: 90vh;
+    background-color: #ffffff;
     padding: 20px;
 }
 
@@ -12,10 +12,10 @@
     flex-direction: row;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 1000px;
+    width: 70%;
+    max-width: 2000px;
     overflow: hidden;
+    gap: 50px;
 }
 
 .subscription-container {
@@ -57,112 +57,157 @@
 }
 
 .bill input {
-    width: 100%;
+    width: 97%;
     padding: 20px;
     border: #ddd;
     background-color: #dfdedeb0;
     border-radius: 6px;
     font-size: 16px;
+    cursor: pointer;
 }
+
+.bill input:hover {
+    border: 2px solid #159cf7;
+    transform: translateY(-3px); 
+    transition: all 0.2s ease-in-out;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    padding: 12px 15px 12px 40px; 
+    border-radius: 6px;
+    border: #ddd;
+    font-size: 16px;
+    background-color: #dfdedeb0;
+}
+
+.card-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
 
 .expire {
-    padding: 20px;
+    width: 100%; 
     display: flex;
-    gap: 15px;
-    width: 99%;
+    gap: 50px; 
 }
 
-.expire label {
-    display: block;
-    font-size: 14px;
+.expire-field {
+    display: flex;      
+    flex-direction: column;
+    flex: 1;
+}
+
+.expire-field input {
+    margin-top: 5px;
+}
+
+.subscribe-btn {
+    width: 100%;
+    background-color: #0f7ad1;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
     font-weight: bold;
-    margin: 8px 0 4px;
-}
-
-.expire input {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 8px 0 4px;
-}
-
-.subscription-btn {
+    transition: background 0.3s ease;
     margin-top: 20px;
     text-align: center;
 }
 
-.subscribe-btn {
-    background-color: white;
-    color: #159cf7;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
 .subscribe-btn:hover {
-    background-color: #eaeaea;
+    background: #005bb5; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-3px); 
+    transition: all 0.3s ease-in-out;
 }
 
 .subscription-btn p {
     font-size: 12px;
     margin-top: 10px;
-    color: #eaeaea;
-}
-
-/* Subscription Plan */
-.subscription-plan {
-    flex: 1;
-    padding: 40px;
-    background-color: white;
     color: #686868;
 }
 
+.subscription-planning {
+    flex: 1;
+    padding: 40px 30px; 
+    background-color: white;
+    color: #686868;
+    background: linear-gradient(to bottom, #c0e7f769, #dabaf052);   
+    border-radius: 12px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease-in-out; 
+}
+
+
 .subscription-plan h4 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: center; 
+    letter-spacing: 1px; 
 }
 
 .starter-plans {
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.starter-plans input {
-    display: none;
-}
-
-.starter-plans label {
-    display: flex;
-    justify-content: space-between;
+    gap: 20px; 
+    justify-content: center;
     align-items: center;
-    padding: 12px;
+}
+
+.plans {
+    display: flex;
     border: 2px solid #686868;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 16px;
+    border-radius: 12px;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.2s ease-in-out; 
+    cursor: pointer; 
+    color: #fff;
+    background-color: #fff;
+}
+
+.plans:hover {
+    transform: translateY(-3px); 
+    border-color: #159cf7; 
+    background-color: transparent;
+}
+.p-texts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px; 
+}
+
+.p-one {
+    font-size: 18px; 
     font-weight: bold;
+    color: #000000;
 }
 
-.starter-plans label:hover {
-    background-color: #f4f4f4;
+.p-two {
+    font-size: 16px;
+    color: #686868;
+    margin-top: 5px; 
 }
-
-.starter-plans input:checked + label {
-    background-color: #159cf7;
-    color: white;
-    border-color: #159cf7;
-}
-
 .border {
     margin: 20px 0;
-    border-bottom: 2px solid #686868;
+    border-bottom: 3px solid #ffffff;
 }
 
 .subscription-features h4 {
