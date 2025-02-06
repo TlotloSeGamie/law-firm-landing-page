@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: auto;
     background-color: #ffffff;
     padding: 20px;
 }
@@ -12,13 +12,15 @@
     flex-direction: row;
     background-color: white;
     border-radius: 12px;
-    width: 70%;
+    width: 100%;
     max-width: 2000px;
     overflow: hidden;
     gap: 50px;
+    flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
 }
 
-.subscription-container {
+.subscription-container,
+.subscription-planning {
     flex: 1;
     padding: 40px;
     background-color: #ffffff;
@@ -27,6 +29,12 @@
     justify-content: center;
 }
 
+/* Ensure content scales properly on smaller screens */
+.subscription-container {
+    padding: 20px;
+}
+
+/* Header adjustments */
 .logoipsum h3 {
     color: #159cf7;
     font-size: 24px;
@@ -44,20 +52,9 @@
     color: #686868;
 }
 
-.bill {
-    margin-top: 20px;
-    color: #686868;
-}
-
-.bill label {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 8px 0 4px;
-}
-
+/* Bill input styling */
 .bill input {
-    width: 97%;
+    width: 100%;
     padding: 20px;
     border: #ddd;
     background-color: #dfdedeb0;
@@ -77,17 +74,6 @@
     width: 100%;
 }
 
-.input-container input {
-    width: 100%;
-    max-width: 300px;
-    padding: 20px;
-    padding: 12px 15px 12px 40px; 
-    border-radius: 6px;
-    border: #ddd;
-    font-size: 16px;
-    background-color: #dfdedeb0;
-}
-
 .card-icon {
     position: absolute;
     top: 50%;
@@ -96,23 +82,24 @@
     pointer-events: none;
 }
 
-
+/* Expiry date and CVV input fields */
 .expire {
-    width: 100%; 
     display: flex;
-    gap: 50px; 
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping of inputs on small screens */
 }
 
 .expire-field {
-    display: flex;      
-    flex-direction: column;
     flex: 1;
+    margin-top: 10px;
 }
 
 .expire-field input {
+    width: 100%;
     margin-top: 5px;
 }
 
+/* Subscribe button */
 .subscribe-btn {
     width: 100%;
     background-color: #0f7ad1;
@@ -129,7 +116,7 @@
 }
 
 .subscribe-btn:hover {
-    background: #005bb5; 
+    background: #005bb5;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
     transform: translateY(-3px); 
     transition: all 0.3s ease-in-out;
@@ -141,24 +128,21 @@
     color: #686868;
 }
 
+/* Subscription Plan Section */
 .subscription-planning {
-    flex: 1;
-    padding: 40px 30px; 
-    background-color: white;
-    color: #686868;
     background: linear-gradient(to bottom, #c0e7f769, #dabaf052);   
     border-radius: 12px; 
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
-    transition: all 0.3s ease-in-out; 
+    padding: 40px;
 }
 
-
+/* Plan Headers */
 .subscription-plan h4 {
     font-size: 24px;
     font-weight: bold;
     color: #000000;
     margin-bottom: 15px;
-    text-align: center; 
+    text-align: left; 
     letter-spacing: 1px; 
 }
 
@@ -171,6 +155,7 @@
     align-items: center;
 }
 
+/* Plan options layout */
 .plans {
     display: flex;
     border: 2px solid #686868;
@@ -188,6 +173,7 @@
     border-color: #159cf7; 
     background-color: transparent;
 }
+
 .p-texts {
     display: flex;
     flex-direction: column;
@@ -205,15 +191,12 @@
     color: #686868;
     margin-top: 5px; 
 }
-.border {
-    margin: 20px 0;
-    border-bottom: 3px solid #ffffff;
-}
 
 .subscription-features h4 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #159cf7;
 }
 
 .subscription-features ul {
@@ -226,11 +209,336 @@
     padding: 5px 0;
     display: flex;
     align-items: center;
+    color: #159cf7;
 }
 
+/* ✔ inside circle */
 .subscription-features li::before {
     content: "✔";
     color: #159cf7;
     font-weight: bold;
     margin-right: 8px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #159cf7;  /* General adjustments */
+    .subscription-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    
+    .subscription-main-container {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 2000px;
+        overflow: hidden;
+        gap: 50px;
+        flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
+    }
+    
+    .subscription-container,
+    .subscription-planning {
+        flex: 1;
+        padding: 40px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* Ensure content scales properly on smaller screens */
+    .subscription-container {
+        padding: 20px;
+    }
+    
+    /* Header adjustments */
+    .logoipsum h3 {
+        color: #159cf7;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .logoipsum h2 {
+        color: #000000;
+        font-size: 26px;
+        margin: 10px 0;
+    }
+    
+    .logoipsum p {
+        font-size: 16px;
+        color: #686868;
+    }
+    
+    /* Bill input styling */
+    .bill input {
+        width: 100%;
+        padding: 20px;
+        border: #ddd;
+        background-color: #dfdedeb0;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .bill input:hover {
+        border: 2px solid #159cf7;
+        transform: translateY(-3px); 
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .input-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .card-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+    
+    /* Expiry date and CVV input fields */
+    .expire {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap; /* Allow wrapping of inputs on small screens */
+    }
+    
+    .expire-field {
+        flex: 1;
+        margin-top: 10px;
+    }
+    
+    .expire-field input {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    /* Subscribe button */
+    .subscribe-btn {
+        width: 100%;
+        background-color: #0f7ad1;
+        color: white;
+        padding: 18px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .subscribe-btn:hover {
+        background: #005bb5;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+        transform: translateY(-3px); 
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .subscription-btn p {
+        font-size: 12px;
+        margin-top: 10px;
+        color: #686868;
+    }
+    
+    /* Subscription Plan Section */
+    .subscription-planning {
+        background: linear-gradient(to bottom, #c0e7f769, #dabaf052);   
+        border-radius: 12px; 
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+        padding: 40px;
+    }
+    
+    /* Plan Headers */
+    .subscription-plan h4 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 15px;
+        text-align: left; 
+        letter-spacing: 1px; 
+    }
+    
+    .starter-plans {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Plan options layout */
+    .plans {
+        display: flex;
+        border: 2px solid #686868;
+        border-radius: 12px;
+        align-items: center;
+        width: 100%;
+        transition: transform 0.2s ease-in-out; 
+        cursor: pointer; 
+        color: #fff;
+        background-color: #fff;
+    }
+    
+    .plans:hover {
+        transform: translateY(-3px); 
+        border-color: #159cf7; 
+        background-color: transparent;
+    }
+    
+    .p-texts {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px; 
+    }
+    
+    .p-one {
+        font-size: 18px; 
+        font-weight: bold;
+        color: #000000;
+    }
+    
+    .p-two {
+        font-size: 16px;
+        color: #686868;
+        margin-top: 5px; 
+    }
+    
+    .subscription-features h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #159cf7;
+    }
+    
+    .subscription-features ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .subscription-features li {
+        font-size: 16px;
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        color: #159cf7;
+    }
+    
+    /* ✔ inside circle */
+    .subscription-features li::before {
+        content: "✔";
+        color: #159cf7;
+        font-weight: bold;
+        margin-right: 8px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #159cf7;  
+        border-radius: 50%;        
+        text-align: center;         
+        line-height: 20px;          
+        font-size: 14px;            
+    }
+    
+    /* Responsive adjustments */
+    @media screen and (max-width: 1024px) {
+        .subscription-main-container {
+            flex-direction: column; /* Stack elements vertically */
+            gap: 30px;
+        }
+    
+        .subscription-container,
+        .subscription-planning {
+            flex: none;
+            width: 100%; /* Allow containers to be full width */
+            padding: 20px;
+        }
+    
+        .expire {
+            gap: 20px;
+            flex-direction: column; /* Stack expiration and CVV inputs vertically */
+        }
+    
+        .subscribe-btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .logoipsum h3 {
+            font-size: 20px;
+        }
+    
+        .logoipsum h2 {
+            font-size: 22px;
+        }
+    
+        .logoipsum p {
+            font-size: 14px;
+        }
+    
+        .subscription-plan h4 {
+            font-size: 20px;
+        }
+    
+        .p-one {
+            font-size: 16px;
+        }
+    
+        .p-two {
+            font-size: 14px;
+        }
+    
+        .subscription-features li {
+            font-size: 14px;
+        }
+    
+        .subscribe-btn {
+            padding: 15px;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .logoipsum h3 {
+            font-size: 18px;
+        }
+    
+        .logoipsum h2 {
+            font-size: 20px;
+        }
+    
+        .subscription-plan h4 {
+            font-size: 18px;
+        }
+    
+        .starter-plans {
+            margin-top: 20px;
+        }
+    
+        .subscription-features li {
+            font-size: 12px;
+        }
+    
+        .subscribe-btn {
+            padding: 12px;
+        }
+    }
+    
+    border-radius: 50%;        
+    text-align: center;         
+    line-height: 20px;          
+    font-size: 14px;            
 }

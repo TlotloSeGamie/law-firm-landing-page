@@ -26,16 +26,16 @@ const SubscriptionPlan = () => {
                             />
                         <label htmlFor="card-number">Card Number</label>
                         <div className="input-container">
-                            <svg className="card-icon" width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="24" r="14" fill="#EA001B" />
-                                <circle cx="32" cy="24" r="14" fill="#FFA200" fillOpacity="0.8 " />
-                            </svg>
                             <input
                                 type="text"
                                 name="card-number"
                                 placeholder="Enter Card Number"
                                 required
                             />
+                            <svg className="card-icon" width="30" height="30" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="24" r="14" fill="#EA001B" />
+                                <circle cx="32" cy="24" r="14" fill="#FFA200" fillOpacity="0.8 " />
+                            </svg>
                         </div>
                         <div className="expire">
                         <div className="expire-field">
