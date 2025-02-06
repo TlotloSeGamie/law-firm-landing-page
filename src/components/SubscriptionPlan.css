@@ -21,30 +21,32 @@
 .subscription-container {
     flex: 1;
     padding: 40px;
-    background-color: #159cf7;
-    color: white;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .logoipsum h3 {
+    color: #159cf7;
     font-size: 24px;
     font-weight: bold;
 }
 
 .logoipsum h2 {
+    color: #000000;
     font-size: 26px;
     margin: 10px 0;
 }
 
 .logoipsum p {
     font-size: 16px;
-    color: #eaeaea;
+    color: #686868;
 }
 
 .bill {
     margin-top: 20px;
+    color: #686868;
 }
 
 .bill label {
@@ -56,19 +58,32 @@
 
 .bill input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 20px;
+    border: #ddd;
+    background-color: #dfdedeb0;
     border-radius: 6px;
     font-size: 16px;
 }
 
 .expire {
+    padding: 20px;
     display: flex;
     gap: 15px;
+    width: 99%;
+}
+
+.expire label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 4px;
 }
 
 .expire input {
-    flex: 1;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0 4px;
 }
 
 .subscription-btn {

@@ -23,9 +23,9 @@ function App() {
       <Pricing /> 
       <HowWorks />
       <Footer /> */}
-      {/* <StartUp />
+     {/* <StartUp />
       <StarterPlan /> 
-      <SignIn />*/}
+      <SignIn /> */}
       <SubscriptionPlan />
     </div>
   );

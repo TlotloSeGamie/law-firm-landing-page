@@ -184,3 +184,77 @@ img {
     bottom: 0;
     width: 100%;
 }
+
+@media (max-width: 1024px) {
+    .startup-main {
+        flex-direction: column; /* Stack on smaller screens */
+    }
+
+    .startup-container, .image-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .lets-start h2 {
+        font-size: 24px;
+    }
+
+    .lets-start p, .logo-line p, .sign-up-form label {
+        font-size: 14px;
+    }
+
+    .sign-up-form input, .continue {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .image-container h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 468px) {
+    .startup-container, .image-container {
+        padding: 20px;
+    }
+
+    .lets-start h2 {
+        font-size: 20px;
+    }
+
+    .lets-start p, .logo-line p, .sign-up-form label {
+        font-size: 12px;
+    }
+
+    .sign-up-form input, .continue {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .image-container h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lets-start h2 {
+        font-size: 18px;
+    }
+
+    .lets-start p, .logo-line p, .sign-up-form label {
+        font-size: 10px;
+    }
+
+    .sign-up-form input, .continue {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .image-container h2 {
+        font-size: 16px;
+    }
+
+    .image-icon img {
+        width: 100%;
+    }
+}

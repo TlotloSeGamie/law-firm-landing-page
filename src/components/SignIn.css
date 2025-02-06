@@ -192,3 +192,75 @@ img {
     bottom: 0;
     width: 100%;
 } 
+
+@media (max-width: 1024px) {
+    .sign-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sign-container {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .welcome h2 {
+        font-size: 1.8rem;
+    }
+
+    .image-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-container {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .welcome h2 {
+        font-size: 1.5rem;
+    }
+
+    .sign-up-form input {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .continue {
+        font-size: 1rem;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-line h3 {
+        font-size: 1.5rem;
+    }
+
+    .welcome h2 {
+        font-size: 1.3rem;
+    }
+
+    .welcome p {
+        font-size: 0.9rem;
+    }
+
+    .sign-up-form label {
+        font-size: 0.9rem;
+    }
+
+    .sign-up-form input {
+        font-size: 0.85rem;
+    }
+
+    .continue {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .image-container h2 {
+        font-size: 1.4rem;
+    }
+}
