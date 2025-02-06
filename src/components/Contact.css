@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
 }
 
@@ -15,6 +15,10 @@
   padding: 30px;
   border-radius: 8px;
   text-align: center;
+}
+
+.intouch-text {
+  padding: 22px;
 }
 
 .intouch-texts h5 {
@@ -93,6 +97,13 @@ textarea {
   resize: vertical;
   height: 25vh;
   cursor: pointer;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
 }
 
 .footer-text {

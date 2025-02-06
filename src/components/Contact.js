@@ -7,13 +7,15 @@ const Contact = () => {
       <div className="contact-container">
         <div className="intouch-texts">
           <h5>Contact</h5>
-          <h2>
-            Get in <span>Touch</span> With Us
-          </h2>
-          <p>
-            We're here to answer your questions and help you get started with
-            StartUp Legal
-          </p>
+          <div className="intouch-text">
+            <h2>
+              Get in <span>Touch</span> With Us
+            </h2>
+            <p>
+              We're here to answer your questions and help you get started with
+              StartUp Legal
+            </p>
+          </div>
         </div>
         <div className="messaging">
           <div className="credientials">
