@@ -21,10 +21,10 @@ const Pricing = () => {
                         </div>
                         <div className="price-content">
                             <ul>
-                                <li> Essential features</li>
-                                <li> Limited support</li>
+                                <li> Access to standard legal templates.</li>
+                                <li> Compliance deadline reminders.t</li>
                                 <li> Single user access</li>
-                                <li> Basic analytics</li>
+                                <li> Educational resources.</li>
                             </ul>
                         </div>
                         <button className="sign-up">Sign Up</button>
@@ -37,10 +37,10 @@ const Pricing = () => {
                         </div>
                         <div className="price-content">
                             <ul>
-                                <li> Advanced features</li>
-                                <li> Priority support</li>
-                                <li> Multiple users</li>
-                                <li> Detailed reports</li>
+                                <li>Priority CIPC services.</li>
+                                <li>5 digital certifications/commissioning per month.</li>
+                                <li>Educational resources.</li>
+                                <li>Advanced compliance tracking tools.</li>
                             </ul>
                         </div>
                         <button className="sign-up">Sign Up</button>
@@ -53,10 +53,10 @@ const Pricing = () => {
                         </div>
                         <div className="price-content">
                             <ul>
-                                <li> All professional features</li>
-                                <li> Dedicated support</li>
-                                <li> Unlimited users</li>
-                                <li> Custom analytics</li>
+                                <li>Unlimited certifications/commissioning.</li>
+                                <li>AI-powered compliance insights.</li>
+                                <li>Educational resources.</li>
+                                <li> Industry-specific analytics</li>
                             </ul>
                         </div>
                         <button className="sign-up">Sign Up</button>

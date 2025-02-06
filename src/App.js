@@ -11,22 +11,24 @@ import StartUp from './components/StartUp';
 import StarterPlan from './components/StarterPlan';
 import SignIn from './components/SignIn';
 import SubscriptionPlan from './components/SubscriptionPlan';
+import AccountSecure from './components/AccountSecure';
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar />
+    {/*  <Navbar />
       <Home />
-      <Features />
-      <Contact />
-      <FAQ />
-      <Pricing /> 
+     <Features />
+       <Pricing />
       <HowWorks />
-      <Footer /> */}
-      {/* <StartUp />
+      <FAQ /> 
+      <Contact />
+      <Footer />*/}
+      <StartUp />
       <StarterPlan /> 
-      <SignIn />*/}
-      <SubscriptionPlan />
+      <SignIn />
+      <SubscriptionPlan /> 
+      <AccountSecure />  
     </div>
   );
 }

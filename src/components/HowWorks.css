@@ -6,13 +6,14 @@
     align-items: center;
     background-color: #FFFFFF;
     text-align: center;
+    padding: 40px;
 }
 
 .how-container h5 {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .how-container h2 {
@@ -22,7 +23,7 @@
 }
 
 .how-container h2 span {
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .how-container p {
@@ -55,19 +56,25 @@
 .step h1 {
     font-size: 70px;
     margin-bottom: 10px;
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .step h3 {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #159cf7;
+    color: #0D99FF;
 }
 
 .step p {
     font-size: 18px;
     line-height: 1.5;
+}
+img {
+    position: relative;
+    bottom: 0;
+    width: 60%;
+    background-color: transparent;
 }
 
 @media screen and (max-width: 1024px) {

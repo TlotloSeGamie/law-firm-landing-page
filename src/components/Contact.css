@@ -4,21 +4,26 @@
   justify-content: center;
   align-items: center;
   height: auto;
-  padding: 20px;
+  padding: 30px;
+  background-color: white;
 }
 
 .contact-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   background-color: white;
   padding: 30px;
   border-radius: 8px;
   text-align: center;
 }
 
+.intouch-text {
+  padding: 22px;
+}
+
 .intouch-texts h5 {
   font-size: 1.2rem;
-  color: #159cf7;
+  color: #0D99FF;
   margin-bottom: 10px;
 }
 
@@ -29,7 +34,7 @@
 }
 
 .intouch-texts span {
-  color: #159cf7;
+  color: #0D99FF;
 }
 
 .intouch-texts p {
@@ -80,12 +85,12 @@
 
 .input-field:focus {
   outline: none;
-  border-color: #2da7f8;
+  border-color: #0D99FF;
 }
 
 textarea {
   padding: 12px;
-  border: 2px solid #2da7f8;
+  border: 2px solid #0D99FF;
   border-radius: 5px;
   font-size: 1rem;
   width: 100%;
@@ -94,16 +99,23 @@ textarea {
   cursor: pointer;
 }
 
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
 .footer-text {
   font-size: 0.9rem;
   color: #999;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .submit-btn {
   width: 50%;
   padding: 16px 30px;
-  background-color: #159cf7;
+  background-color: #0D99FF;
   color: white;
   border: none;
   border-radius: 5px;

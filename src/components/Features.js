@@ -14,36 +14,30 @@ const Features = () => {
             Powerful Tools to Simplify <span>Your Legal Journey</span>
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.at
+          Automate your compliance, generate legal documents, and stay up-to-date with real-time notifications everything you need, all in one platform
           </p>
         </div>
         <div className="features-nav">
           <ul>
             <li>
               <FaClipboardCheck color="#159cf7" /> <span>Automated Compliance Tracking</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Stay on top of your business’s compliance with automated reminders and alerts. </p>
             </li>
             <li>
               <FaFileSignature color="#159cf7" /> <span>Document Generation & E-Signatures</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Create, customize, and sign legal documents securely in minutes.</p>
             </li>
             <li>
               <FaBuilding color="#159cf7" /> <span>Post-Time CIPC Registration</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Manage company registration and updates in real-time through seamless CIPC integration.</p>
             </li>
             <li>
               <AiOutlineRobot color="#159cf7" /> <span>AI-Powered Legal Updates</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Stay updated with tailored legal notifications and regulatory changes for your business.</p>
             </li>
             <li>
               <FaBookOpen color="#159cf7" /> <span>Educational Resources</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Create, customize, and sign legal documents securely in minutes.</p>
             </li>
           </ul>
         </div>
