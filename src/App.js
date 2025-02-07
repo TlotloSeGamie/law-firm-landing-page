@@ -13,6 +13,7 @@ import SignIn from './components/SignIn';
 import SubscriptionPlan from './components/SubscriptionPlan';
 import AccountSecure from './components/AccountSecure';
 import Dashboard from './components/Dashboard';
+import ComplianceTracking from './components/ComplianceTracking';
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
       <SignIn />
       <SubscriptionPlan /> 
       <AccountSecure />  */}
-      <Dashboard/>
+      {/* <Dashboard/> */}
+      <ComplianceTracking />
     </div>
   );
 }

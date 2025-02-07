@@ -15,7 +15,7 @@ const StarterPlan = () => {
     const { name, value } = e.target;
 
     if (name === "registrationNumber" && !/^\d*$/.test(value)) {
-      return; // Prevents non-numeric input
+      return;
     }
 
     setFormData({ ...formData, [name]: value });

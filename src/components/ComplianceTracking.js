@@ -2,7 +2,7 @@ import React from "react";
 import "./Dashboard.css";
 import logo from "../assets/Frame.png";
 
-const Dashboard = () => {
+const ComplianceTracking = () => {
   return (
     <div className="dashboard-main">
       {/* Sidebar Menu */}
@@ -36,7 +36,7 @@ const Dashboard = () => {
       {/* Main Dashboard Content */}
       <div className="dashboard-contents">
         <div className="top-content">
-          <h4>Home</h4>
+          <h4>Home "v" <span>Compliance Tracking</span></h4>
           <div className="profile-bar">
             <button className="ask-btn">Ask AI</button>
             <div className="notification">🔔</div>
@@ -46,30 +46,39 @@ const Dashboard = () => {
         <div className="borders"></div>
         {/* Mid Content Section */}
         <div className="mid-content">
-          <div className="welcoming-legal">
-            <div className="date-name">
-              <h4>Thu, 23 January</h4>
-              <h1>Good Morning, Frankie</h1>
+          <div className="business-legal">
+            <div className="business-name">
+              <h3>Evergreen Solutions (Pty) Ltd</h3>
+              Registration No: 2017/42437/07
             </div>
-            <button className="legal-btn">Legal Document</button>
-          </div>
+            <select
+              id="business-type"
+              name="businessType"
+              className="select-field"
+              required
+            >
+              <option value="" disabled>Select Business (Pty) Ltd</option>
+              <option value="novaedge"> NovaEdge Consulting(Pty) Ltd</option>
+              <option value="vertex">Vertex Innovation</option>
+            </select>          
+            </div>
 
           <div className="subscription-report">
+            <div className="report-box">
+              <h4>Tax Number</h4>
+              <p>9098 765 432</p>
+            </div>
             <div className="report-box">
               <h4>Annual Return Status</h4>
               <p>In Business</p>
             </div>
             <div className="report-box">
-              <h4>Edited Documents</h4>
-              <p>05</p>
+              <h4>Financial Year End Date</h4>
+              <p>March 10, 2026</p>
             </div>
             <div className="report-box">
-              <h4>Upcoming Deadlines</h4>
-              <p>March 10, 2025</p>
-            </div>
-            <div className="report-box">
-              <h4>Days Until Payment</h4>
-              <p>2 days left</p>
+              <h4>Overdue Compliance</h4>
+              <p>2Tasks Overdue</p>
             </div>
           </div>
         </div>
@@ -77,37 +86,48 @@ const Dashboard = () => {
         {/* Last Content Section */}
         <div className="last-content">
           <div className="content-texts">
-             <h3>Recently Edited Documents </h3> Track your latest document updates and saved changes in one place.
+             <h3>Compliance Task List </h3> 
              
           </div>
           <div className="table">
-              <table className="recent-saved-documents">
+              <table className="compliance-list">
                 <thead>
                   <tr>
-                    <th>Document Name</th>
-                    <th>Last Modified</th>
+                    <th>Task name</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Employment Contract</td>
-                    <td>Jan 29, 2025, 11:15</td>
+                    <td>CIPC Annual Return Filing</td>
+                    <td>March 15, 2025</td>
+                    <th>Pending</th>
                     <td><button className="view">View</button></td>
                   </tr>
                   <tr>
-                    <td>Non-Disclosure Agreement</td>
-                    <td>Jan 30, 2025, 14:45</td>
+                    <td>Business Address Update</td>
+                    <td>April 5, 2025</td>
+                    <th>Completed</th>
                     <td><button className="view">View</button></td>
                   </tr>
                   <tr>
-                    <td>Partnership Agreement</td>
-                    <td>Jan 28, 2025, 09:30</td>
+                    <td>Trademark Renewal</td>
+                    <td>May 10, 2025</td>
+                    <th>Overdue</th>
                     <td><button className="view">View</button></td>
                   </tr>
                   <tr>
-                    <td>Trademark Application</td>
-                    <td>Jan 27, 2025, 16:50</td>
+                    <td>ID Verification</td>
+                    <td>Feb 25, 2025</td>
+                    <th>Pending</th>
+                    <td><button className="view">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>Director Update submission</td>
+                    <td>March 2, 2025</td>
+                    <th>Pending</th>
                     <td><button className="view">View</button></td>
                   </tr>
                 </tbody>
@@ -119,4 +139,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default ComplianceTracking;
