@@ -12,6 +12,8 @@ import StarterPlan from './components/StarterPlan';
 import SignIn from './components/SignIn';
 import SubscriptionPlan from './components/SubscriptionPlan';
 import AccountSecure from './components/AccountSecure';
+import Dashboard from './components/Dashboard';
+
 
 function App() {
   return (
@@ -23,12 +25,13 @@ function App() {
       <HowWorks />
       <FAQ /> 
       <Contact />
-      <Footer />*/}
+      <Footer />
       <StartUp />
       <StarterPlan /> 
       <SignIn />
       <SubscriptionPlan /> 
-      <AccountSecure />  
+      <AccountSecure />  */}
+      <Dashboard/>
     </div>
   );
 }
