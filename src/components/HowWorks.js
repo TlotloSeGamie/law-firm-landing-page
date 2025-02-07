@@ -7,7 +7,7 @@ import launch from '../assets/app-launch (2) 1.png';
 
 const HowWorks = () => {
     return(
-        <div className="how-main">
+        <div className="how-main" id="how-it-works">
             <div className="how-container">
                 <h5>How it Works</h5>
                 <h2>How The <span>Start Up</span> Legal Works</h2>

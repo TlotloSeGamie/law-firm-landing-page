@@ -6,7 +6,7 @@ import { AiOutlineRobot } from "react-icons/ai";
 
 const Features = () => {
   return (
-    <div className="features-main">
+    <div className="features-main" id="features">
       <div className="features-container">
         <div className="texts">
           <h5>Features</h5>

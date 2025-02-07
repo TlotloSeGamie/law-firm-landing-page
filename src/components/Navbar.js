@@ -34,42 +34,42 @@ const Navbar = () => {
             About
           </a>
           <a 
-            href="services" 
+            href="#services" 
             className={`nav-item ${activeLink === "services" ? "active" : ""}`} 
             onClick={() => { setActiveLink("services"); setMenuOpen(false); }}
           >
             Services
           </a>
           <a 
-            href="features" 
+            href="#features" 
             className={`nav-item ${activeLink === "features" ? "active" : ""}`} 
             onClick={() => { setActiveLink("features"); setMenuOpen(false); }}
           >
             Features
           </a>
           <a 
-            href="pricing" 
+            href="#pricing" 
             className={`nav-item ${activeLink === "pricing" ? "active" : ""}`} 
             onClick={() => { setActiveLink("pricing"); setMenuOpen(false); }}
           >
             Pricing
           </a>
           <a 
-            href="how-it-works" 
+            href="#how-it-works" 
             className={`nav-item ${activeLink === "how-it-works" ? "active" : ""}`} 
             onClick={() => { setActiveLink("how-it-works"); setMenuOpen(false); }}
           >
             How it works
           </a>
           <a 
-            href="faq" 
+            href="#faq" 
             className={`nav-item ${activeLink === "faq" ? "active" : ""}`} 
             onClick={() => { setActiveLink("faq"); setMenuOpen(false); }}
           >
             FAQ
           </a>
           <a 
-            href="blog" 
+            href="#blog" 
             className={`nav-item ${activeLink === "blog" ? "active" : ""}`} 
             onClick={() => { setActiveLink("blog"); setMenuOpen(false); }}
           >

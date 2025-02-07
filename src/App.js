@@ -19,7 +19,7 @@ import ComplianceTracking from './components/ComplianceTracking';
 function App() {
   return (
     <div className="App">
-    {/*  <Navbar />
+     {/* <Navbar />
       <Home />
      <Features />
        <Pricing />
@@ -31,9 +31,9 @@ function App() {
       <StarterPlan /> 
       <SignIn />
       <SubscriptionPlan /> 
-      <AccountSecure />  */}
-      {/* <Dashboard/> */}
-      <ComplianceTracking />
+      <AccountSecure />  
+      <Dashboard/> */}
+      <ComplianceTracking /> 
     </div>
   );
 }
