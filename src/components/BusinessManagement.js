@@ -1,5 +1,7 @@
 import {React, useState} from "react";
-import "./ComplianceTracking.css";
+import './BusinessManagement.css';
+import { FaChevronRight } from "react-icons/fa";
+
 import profile from '../assets/profile-image.png';
 
 
@@ -15,7 +17,7 @@ const BusinessManagement = () => {
         <div className='business-main'>
             <div className='business-container'>
                 <div className="top-content">
-                <h4>Home "v" <span>BusinessManagement</span></h4>
+                <h4>Home <FaChevronRight size={12}/> <span>BusinessManagement</span></h4>
                 <div className="profile-bar">
                     <button className="ask-btn">Ask AI</button>
                     <div className="notification">🔔</div>
@@ -76,16 +78,16 @@ const BusinessManagement = () => {
                             <td>John Doe</td>
                             <td>CEO</td>
                             <td>081 5567 1101</td>
-                            <th>doe@gmail.com</th>
-                            <th>01/01/2023</th>
+                            <td>doe@gmail.com</td>
+                            <td>01/01/2023</td>
                             <td><button className="view">View</button></td>
                         </tr>
                         <tr>
                             <td>Jane Smith</td>
                             <td>Director</td>
                             <td>081 567 1101</td>
-                            <th>smith@gmail.com</th>
-                            <th>01/012023</th>
+                            <td>smith@gmail.com</td>
+                            <td>01/012023</td>
                             <td><button className="view">View</button></td>
                         </tr>
                         </tbody>
@@ -112,21 +114,17 @@ const BusinessManagement = () => {
                             <td>John Doe</td>
                             <td>40%</td>
                             <td>081 5567 1101</td>
-                            <th>doe@gmail.com</th>
-                            <th>01/01/2023</th>
+                            <td>doe@gmail.com</td>
+                            <td>01/01/2023</td>
                             <td><button className="view">View</button></td>
                             </tr>
                             <tr>
                             <td>Jane Smith</td>
                             <td>60%</td>
                             <td>081 567 1101</td>
-                            <th>smith@gmail.com</th>
-                            <th>01/012023</th>
+                            <td>smith@gmail.com</td>
+                            <td>01/012023</td>
                             <td><button className="view">View</button></td>
-                            </tr>
-                            <tr>
-                            <td>Tax Clearance Certificate</td>
-                            <td>Feb 10, 2025</td>
                             </tr>
                         </tbody>
                         </table>

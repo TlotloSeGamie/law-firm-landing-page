@@ -32,10 +32,10 @@ function App() {
       <StarterPlan /> 
       <SignIn />
       <SubscriptionPlan /> 
-      <AccountSecure />  
-      <Dashboard/> */}
-      {/* <ComplianceTracking />  */}
-      <BusinessManagement />
+      <AccountSecure />  */}
+      <Dashboard/> 
+     {/* <ComplianceTracking /> 
+       <BusinessManagement /> */}
     </div>
   );
 }
