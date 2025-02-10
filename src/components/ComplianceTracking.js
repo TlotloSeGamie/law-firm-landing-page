@@ -1,6 +1,8 @@
 import {React, useState} from "react";
 import "./ComplianceTracking.css";
-import logo from "../assets/Frame.png";
+import profile from '../assets/profile-image.png';
+import { Landmark, Scale, Calendar, AlertTriangle   } from "lucide-react";
+
 
 const ComplianceTracking = () => {
   const [showOptions, setShowOptions] = useState(false);
@@ -8,46 +10,21 @@ const ComplianceTracking = () => {
 
   const handleSelect = (businessName) => {
     setSelectedBusiness(businessName);
-    setShowOptions(false); // Hide options after selection
+    setShowOptions(false); 
   };
 
   return (
     <div className="dashboard-main">
-      {/* Sidebar Menu */}
-      <div className="menu-sidebar">
-          <div className="menu-main">
-            <div className="logo">
-              <img src={logo} alt="Logo" />
-            </div>
-            <div className="menu-container">
-              <h3>Main Menu</h3>
-              <div className="menu-links">
-                <a href="dashboard">Dashboard</a>
-                <a href="compliance">Compliance Tracking</a>
-                <a href="business-management">Business Management</a>
-                <a href="e-signature">E-Signature</a>
-                <a href="legal-updates">Legal Updates</a>
-                <a href="subscription-billing">Subscription & Billing</a>
-              </div>
-              <div className="border"></div>
-              <div className="other">
-                <h3>Other</h3>
-                <div className="others">
-                  <a href="settings">Settings</a>
-                  <a href="document-generator">Document Generator</a>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
+      {/* Sidebar Menu */} 
       <div className="dashboard-contents">
         <div className="top-content">
           <h4>Home "v" <span>Compliance Tracking</span></h4>
           <div className="profile-bar">
             <button className="ask-btn">Ask AI</button>
             <div className="notification">🔔</div>
-            <div className="profile">👤</div>
+            <div className="profile">
+              <img src={profile} alt="profile" />
+            </div>
           </div>
         </div>
         <div className="borders"></div>
@@ -79,19 +56,28 @@ const ComplianceTracking = () => {
 
           <div className="subscription-report">
             <div className="report-box">
-              <h4>Tax Number</h4>
+              <h4>
+              Tax Number
+              <Landmark className="inline-block mr-2" color="#0d99ff" />
+              </h4>
               <p>9098 765 432</p>
             </div>
             <div className="report-box">
-              <h4>Annual Return Status</h4>
+              <h4>Annual Return Status
+              <Scale className="inline-block mr-2" />
+              </h4>
               <p>In Business</p>
             </div>
             <div className="report-box">
-              <h4>Financial Year End Date</h4>
+              <h4>Financial Year End Date
+              <Calendar className="inline-block mr-2" />
+              </h4>
               <p>March 10, 2026</p>
             </div>
             <div className="report-box">
-              <h4>Overdue Compliance</h4>
+              <h4>Overdue Compliance
+              <AlertTriangle className="inline-block mr-2" />
+              </h4>
               <p>2Tasks Overdue</p>
             </div>
           </div>

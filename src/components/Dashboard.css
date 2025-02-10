@@ -171,7 +171,7 @@ body {
 }
 
 .recent-saved-documents thead {
-  background: #f5f5f5;
+  background: white;
   color: #666;
   border-radius: 10px;
 }
@@ -211,4 +211,6 @@ body {
   border-bottom: none;
 }
 
-  
+.profile img {
+  width: 100%;
+}
