@@ -20,7 +20,7 @@ import BusinessManagement from './components/BusinessManagement'
 function App() {
   return (
     <div className="App">
-     {/* <Navbar />
+     <Navbar />
       <Home />
      <Features />
        <Pricing />
@@ -32,10 +32,10 @@ function App() {
       <StarterPlan /> 
       <SignIn />
       <SubscriptionPlan /> 
-      <AccountSecure />  */}
+      <AccountSecure /> 
       <Dashboard/> 
-     {/* <ComplianceTracking /> 
-       <BusinessManagement /> */}
+     <ComplianceTracking /> 
+       <BusinessManagement />
     </div>
   );
 }
