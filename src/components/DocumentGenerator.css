@@ -1,0 +1,166 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  .document-main {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .top-content h4 {
+    display: flex;
+    align-items: center;
+    color: #8b8b8b;
+    font-size: 16px;
+  }
+  
+  .top-content h4 span {
+    color: #0D99FF;
+    font-weight: bold;
+  }
+  
+  .profile-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .ask-btn {
+    background: #0d9aff2e;
+    color: #0D99FF;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .ask-btn:hover {
+    background: #0d9aff2e;
+  }
+  
+  .notification {
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .signature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px 0;
+    gap: 40px;
+  }
+  
+  .signature-text h3 {
+    color: #8b8b8b;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .upload-document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 25px;
+    border: 5px dotted #8b8b8b;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    height: 40vh;
+  }
+
+  .upload-document img {
+    width: 20%;
+  }
+  
+  .documents-templates {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 6px 9px;
+    background: #ddd;
+    width: 26%;
+    /* height: 10vh; */
+    border-radius: 8px;
+  }
+  
+  .documents-templates button {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .documents-templates button:hover {
+    background: #0077cc;
+  }
+  
+  .compliance-storage h3 {
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .table {
+    margin-top: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .Document-list {
+    width: 100%;
+  }
+  
+  .Document-list th, .Document-list td {
+    padding: 12px;
+    text-align: left;
+    color: #8b8b8b;
+  }
+  
+  .Document-list th {
+    background: #ddd;
+    color: #8b8b8b;
+    font-weight: bold;
+  }
+  
+  .download {
+    background: #0d9aff26;
+    color: #0D99FF;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .download:hover {
+    background: #0077cc;
+  }
+  

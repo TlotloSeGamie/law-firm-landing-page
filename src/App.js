@@ -15,6 +15,7 @@ import AccountSecure from './components/AccountSecure';
 import Dashboard from './components/Dashboard';
 import ComplianceTracking from './components/ComplianceTracking';
 import BusinessManagement from './components/BusinessManagement'
+import DocumentGenerator from './components/DocumentGenerator';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
       <Dashboard/> 
      <ComplianceTracking />  */}
        {/* <BusinessManagement /> */}
+       <DocumentGenerator />
     </div>
   );
 }

@@ -2,7 +2,6 @@ import { React, useState } from "react";
 import "./BusinessManagement.css";
 import { FaBell, FaChevronRight, FaArrowUp } from "react-icons/fa";
 import { FaClipboardList, FaPlus } from "react-icons/fa";
-
 import { FaBriefcase, FaEdit } from "react-icons/fa";
 import success from "../assets/undraw_success-factors_3eki 1.png";
 import profile from "../assets/profile-image.png";
