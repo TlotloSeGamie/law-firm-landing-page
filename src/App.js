@@ -15,7 +15,8 @@ import AccountSecure from './components/AccountSecure';
 import Dashboard from './components/Dashboard';
 import ComplianceTracking from './components/ComplianceTracking';
 import BusinessManagement from './components/BusinessManagement'
-import DocumentGenerator from './components/DocumentGenerator';
+import LegalUpdates from './components/LegalUpdates';
+import VerifyIdentity from './components/VerifyIdentity';
 
 
 function App() {
@@ -33,11 +34,12 @@ function App() {
       <StarterPlan /> 
       <SignIn />
       <SubscriptionPlan /> 
-      <AccountSecure /> 
+      <AccountSecure /> */}
       <Dashboard/> 
-     <ComplianceTracking />  */}
+     <ComplianceTracking />  
        {/* <BusinessManagement /> */}
-       <DocumentGenerator />
+       {/* <LegalUpdates /> */}
+       {/* <VerifyIdentity /> */}
     </div>
   );
 }

@@ -133,7 +133,7 @@
     background: #0d9aff21; 
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
     transform: translateY(-3px); 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
   }
   
   .documents-templates {

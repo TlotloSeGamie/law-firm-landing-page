@@ -1,0 +1,117 @@
+.verify-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .verify-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+  }
+  
+  .verify-container img {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .verify-container h2 {
+    text-align: left;
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  .upload-id {
+    /* width: 100%; */
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #868686;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 40vh;
+    cursor: pointer;
+  }
+  
+  .upload-icon {
+    font-size: 40px;
+    color: #0d99ff;
+    margin-bottom: 10px;
+  }
+  
+  .upload-btn {
+    background-color: #eb443550;
+    color: #eb4335;
+    border: none;
+    padding: 1px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .upload-btn:hover {
+    background-color: #007acc;
+  }
+  
+  .upload-id p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .submit {
+    background-color: #0d99ff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+  }
+  
+  .submit:hover {
+    background-color: #007acc;
+  }
+  
+  .secure-trusted {
+    text-align: center;
+    max-width: 1000px;
+    margin-left: 40px;
+  }
+  
+  .secure-trusted h2 {
+    font-size: 42px;
+    color: #868686;
+    margin-bottom: 20px;
+  }
+  
+  .secure-trusted img {
+    width: 100%;
+    max-width: 500px;
+  }
