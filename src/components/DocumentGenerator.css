@@ -97,6 +97,45 @@
     width: 20%;
   }
   
+  .upload-document:hover {
+    background: #f5f5f5;
+  }
+
+  .options-container {
+    display: flex;
+    width: 60%;
+    height: 14vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    margin-top: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    border-radius: 12px;
+    position: relative;
+    left: 23rem;
+  }
+
+  .option-button {
+    width: 70%;
+    background-color: #0d9aff3b;
+    color: #0D99FF;
+    font-weight: 600;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .option-button:hover {
+    background: #0d9aff21; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-3px); 
+    transition: all 0.3s ease-in-out;
+  }
+  
   .documents-templates {
     display: flex;
     gap: 15px;

@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import "./DocumentGenerator.css";
 import { FaBell, FaChevronRight } from "react-icons/fa";
 // import { FileUp  } from "lucide-react";
@@ -6,6 +6,9 @@ import clipboard from '../assets/task-add-01-stroke-rounded(1) 1.png';
 import profile from "../assets/profile-image.png";
 
 const DocumentGenerator = () => {
+  const [showOptions, setShowOptions] = useState(false);
+
+
   return (
     <div className="document-main">
       <div className="document-container">
@@ -30,11 +33,17 @@ const DocumentGenerator = () => {
           <h3>Legal Document Generator</h3>
           Easily create, edit, and manage legally compliant business documents.
         </div>
-        <div className="upload-document">
-        {/* <FileUp  size={234} className="text-gray-700" />; */}
-          <img src={clipboard} alt="clipboard" />
-          <p>New Document</p>
+        <div className="upload-document" onClick={() => setShowOptions(!showOptions)}>
+      <img src={clipboard} alt="clipboard" />
+      <p>New Document</p>
+
+      {showOptions && (
+        <div className="options-container">
+          <button className="option-button">Create a New Document</button>
+          <button className="option-button">Upload Document</button>
         </div>
+      )}
+      </div>
       </div>
       <div className="documents-templates">
         <button className="your-documents">Your Documents</button>
