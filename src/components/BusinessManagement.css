@@ -1,6 +1,6 @@
 .business-main {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: white;
     padding: 20px;
 }
 
@@ -8,7 +8,6 @@
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .top-content {
@@ -23,6 +22,10 @@
     color: #333;
 }
 
+.top-content h4 span {
+    color: #0D99FF;
+}
+
 .profile-bar {
     display: flex;
     align-items: center;
@@ -30,8 +33,8 @@
 }
 
 .ask-btn {
-    background-color: #007bff;
-    color: white;
+    background-color: #007bff3f;
+    color: #0D99FF;
     border: none;
     padding: 8px 16px;
     border-radius: 5px;
@@ -40,7 +43,7 @@
 }
 
 .ask-btn:hover {
-    background-color: #0056b3;
+    background-color: #0057b365;
 }
 
 .notification {
@@ -61,56 +64,174 @@
     margin-bottom: 20px;
 }
 
-.business-legal {
+.business-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.business-btns {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.business-btns h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.register-documents-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.legal-documents-btn,
+.register-now-btn {
+    background: #0d9aff29;
+    color: #0D99FF;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.legal-documents-btn:hover,
+.register-now-btn:hover {
+    background: #0077cc;
+}
+
+.business-profile-overview {
+    display: flex;
     width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.business-profile-text h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.business-profile-text {
+    color: #555;
+    font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.select-button {
+    background: #0D99FF;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: max-content;
+    overflow: hidden;
+}
+
+.dropdown-options div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.2s ease;
+}
+
+.dropdown-options div:hover {
+    background: #f0f0f0;
+}
+
+.business-details {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+}
+
+.business-info {
+    display: flex;
+    gap: 55px;
+    justify-content: space-between;
+}
+
+.edit-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-details .w-6,
+.edit-details .w-4 {
+    color: #0D99FF;
+}
+
+.business-info img {
+    width: 35%;
+}
+
+.edit-btn {
+    background: #0d9aff35;
+    color: #0D99FF;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.edit-btn:hover {
+    background: #0077cc;
+}
+
+.full-business-info {
+    font-size: 22px;
+    color: #444;
+    border: 1px solid #bcbcbc;
+    padding: 17px;
+    border-radius: 18px;
+}
+
+.full-business-info span {
+    font-weight: bold;
+    color: #0D99FF;
 }
 
 .business-name h3 {
     font-size: 19px;
     font-weight: bold;
     color: #333;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.select-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.select-button:hover {
-    background-color: #0056b3;
-}
-
-.dropdown-options {
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-top: 5px;
-    width: 100%;
-    text-align: left;
-    z-index: 10;
-}
-
-.dropdown-options div {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.dropdown-options div:hover {
-    background-color: #f1f1f1;
 }
 
 .borders {
@@ -121,22 +242,6 @@
 .register-documents-btn {
     display: flex;
     gap: 10px;
-}
-
-.legal-documents-btn,
-.register-now-btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.legal-documents-btn:hover,
-.register-now-btn:hover {
-    background-color: #0056b3;
 }
 
 .table {
