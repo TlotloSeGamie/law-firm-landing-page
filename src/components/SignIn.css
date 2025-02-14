@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    padding: 3rem;
 }
 
 .sign-container {
@@ -40,6 +41,7 @@
     color: #159cf7;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .welcome {

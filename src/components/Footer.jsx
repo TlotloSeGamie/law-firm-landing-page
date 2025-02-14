@@ -9,28 +9,27 @@ const Footer = () => {
     <div className="footer-main">
       <div className="footer-container">
         <div className="logo">
-          {/* <h4 className="logo-text">LOGO P/UM</h4> */}
-          <img src={logo} alt="Logo" />
+          {/* <img src={logo} alt="Logo" /> */}
           <p>Our mission is to empower South African SMEs with accessible, affordable, and efficient legal solutions, driving seamless compliance and business growth. 
           </p>
         </div>
         <div className="navigation">
             <h4>Navigation</h4>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>FAQs</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQs</a></li>
             </ul>
         </div>
         <div className="utilities">
             <h4>Utilities</h4>
             <ul>
-                <li>Terms and Conditions</li>
-                <li>Privacy and Policy</li>
-                <li>Universe</li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy and Policy</a></li>
+                <li><a href="">License</a></li>
             </ul>
         </div>
         <div className="subscription">
@@ -44,7 +43,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
-        <div className="border"></div>
+        <div className="footer-border"></div>
       <div className="right-socials">
         <div className="rights">
           <p>copyright 2025 start up</p>

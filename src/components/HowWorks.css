@@ -7,6 +7,8 @@
     background-color: #FFFFFF;
     text-align: center;
     padding: 40px;
+    position: relative;
+    top: 8rem;
 }
 
 .how-container h5 {

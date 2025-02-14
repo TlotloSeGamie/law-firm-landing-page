@@ -5,6 +5,8 @@
     min-height: 89vh;
     background: linear-gradient(to bottom, #c0e7f769, #dabaf052);  
     padding: 50px 20px;
+    position: relative;
+    top: 8rem;
 }
 
 .pricing-container {

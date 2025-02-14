@@ -1,13 +1,13 @@
 .nav-main-container {
-    position: fixed;
+    position: fixed; 
     width: 100%;
     padding: 1vw 0;
-    position: relative;
     top: 0;
     left: 0;
     z-index: 1000;
     background: #E0F6FD;
 }
+
 
 .nav-container {
     display: flex;
@@ -18,10 +18,11 @@
     padding: 0 2vw;
 }
 
-.logo-text {
-    font-size: clamp(1rem, 4vw, 1.8rem);
-    font-weight: bold;
-    color: #0D99FF;
+.logo img {
+    width: clamp(90px, 16vw, 160px); 
+    height: auto; 
+    max-width: 100%; 
+    display: block; 
 }
 
 .nav-links {
@@ -30,6 +31,8 @@
     font-size: clamp(14px, 3vw, 50px);
     left: 9vw;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item {
@@ -74,74 +77,61 @@
     color: #0D99FF;
 }
 
-@media screen and (max-width: 1024px) {
-    .logo-text {
-        font-size: clamp(1.2rem, 3vw, 1.5rem);
-    }
-    .nav-links {
-        gap: clamp(15px, 4vw, 40px);
-        left: 5vw;
-    }
-    .nav-item {
-        font-size: clamp(0.7rem, 2vw, 0.9rem);
-    }
-    .try-btn {
-        padding: clamp(6px, 1.5vw, 8px) clamp(12px, 2vw, 18px);
-        font-size: clamp(0.75rem, 1.5vw, 0.9rem);
-    }
+.scrolled {
+    background: rgba(224, 246, 253, 0); 
+    backdrop-filter: blur(20px);
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
 }
+
 
 @media screen and (max-width: 768px) {
     .nav-container {
-        padding: 0 3vw;
+        padding: 0 5vw;
     }
+
     .menu-icon {
         display: block;
-        background-color: aliceblue
-        ;
     }
+
     .nav-links {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
         position: absolute;
         top: 60px;
         left: 0;
-        width: 100%;
-        flex-direction: column;
-        background-color: linear-gradient(to bottom, #c0e7f769, #dabaf052);   
-        text-align: center;
-        gap: clamp(10px, 2.5vw, 15px);
-        padding: 15px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        background: rgba(224, 246, 253, 0.95);
+        backdrop-filter: blur(15px);
         display: none;
-        backdrop-filter: blur(70px);
+        transition: all 0.3s ease-in-out;
     }
+
     .nav-links.open {
         display: flex;
     }
+
     .nav-item {
-        font-size: clamp(0.8rem, 2.5vw, 1rem);
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
         padding: 10px 0;
     }
+
     .try-btn {
-        padding: clamp(5px, 1.2vw, 7px) clamp(10px, 2vw, 16px);
-        font-size: clamp(0.7rem, 1.5vw, 0.85rem);
+        font-size: clamp(0.8rem, 3vw, 1rem);
+        padding: 8px 16px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .logo-text {
-        font-size: clamp(1rem, 3vw, 1.2rem);
+    .logo img {
+        width: clamp(80px, 25vw, 120px);
     }
-    .menu-icon {
-        font-size: clamp(1.2rem, 4vw, 1.8rem);
-    }
-    .nav-links {
-        font-size: clamp(14px, 3vw, 25px);
-    }
+
     .nav-item {
-        font-size: clamp(0.7rem, 2vw, 0.85rem);
+        font-size: clamp(0.8rem, 3vw, 1rem);
     }
+
     .try-btn {
-        padding: clamp(4px, 1vw, 6px) clamp(8px, 2vw, 14px);
-        font-size: clamp(0.65rem, 1.5vw, 0.8rem);
+        font-size: clamp(0.75rem, 3vw, 0.95rem);
+        padding: 6px 14px;
     }
 }

@@ -6,6 +6,8 @@
   color: #555;
   padding: 50px 20px;
   text-align: center;
+  position: relative;
+  top: 8rem;
 }
 
 .q-top {

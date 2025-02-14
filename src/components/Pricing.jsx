@@ -1,7 +1,12 @@
 import React from "react";
 import "./Pricing.css";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+    const navigate = useNavigate();
+  const handleSignInRoute = () => {
+    navigate("/sign-up");
+  };
     return (
         <div className="pricing-main" id="pricing">
             <div className="pricing-container">
@@ -27,7 +32,7 @@ const Pricing = () => {
                                 <li> Educational resources.</li>
                             </ul>
                         </div>
-                        <button className="sign-up">Sign Up</button>
+                        <button className="sign-up" onClick={handleSignInRoute}>Sign Up</button>
                     </div>
                     <div className="pricing-card professional">
                         <h5>Professional</h5>
@@ -43,7 +48,7 @@ const Pricing = () => {
                                 <li>Advanced compliance tracking tools.</li>
                             </ul>
                         </div>
-                        <button className="sign-up">Sign Up</button>
+                        <button className="sign-up" onClick={handleSignInRoute}>Sign Up</button>
                     </div>
                     <div className="pricing-card enterprise">
                         <h5>Enterprise</h5>
@@ -59,7 +64,7 @@ const Pricing = () => {
                                 <li> Industry-specific analytics</li>
                             </ul>
                         </div>
-                        <button className="sign-up">Sign Up</button>
+                        <button className="sign-up" onClick={handleSignInRoute}>Sign Up</button>
                     </div>
                 </div>
             </div>

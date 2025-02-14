@@ -5,7 +5,8 @@
     min-height: 70vh;
     background: linear-gradient(to bottom, #E0F6FD, #E8E7FD);   
     padding: 20px;
-    /* width: 100%; */
+    position: relative;
+    top: 8rem;
     gap: 20px;
 }
 

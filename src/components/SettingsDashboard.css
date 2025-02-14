@@ -1,0 +1,244 @@
+.settings-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .settings-container {
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1600px;
+    
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+  }
+  
+  .preference-btns {
+    width: 12%;
+    background: #ddd;
+    display: flex;
+    border-radius: 8px;
+    padding: 4px;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  
+  .profile-btn, .preference-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .profile-btn {
+    background: #ddd;
+    color: #333;
+  }
+  
+  .profile-btn:hover {
+    background: #ddd;
+  }
+  
+  .preference-btn {
+    background: #ddd;
+    color: #333;
+  }
+  
+  .preference-btn:hover {
+    background: #d0d0d0;
+  }
+
+  .profile-btn.active, .preference-btn.active {
+    background-color: #fff;
+    color: #333;
+  }
+
+
+  
+  
+  .profile-update {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-update-text h4 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .profile-update-text p {
+    font-size: 14px;
+    color: #777;
+    text-align: left;
+  }
+  
+  .edit-profile-btn {
+    background: #007bff34;
+    color: #0d99ff;
+    padding: 8px 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .edit-profile-btn:hover {
+    background: #007bff34;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .updating-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .name-email, .phone-id {
+    display: flex;
+    gap: 4rem;
+  }
+  
+  .name-email div, .phone-id div {
+    width: 99%;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    padding: 4px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    background: #ddd;
+    border: #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatar h5{
+    color: #333;
+    padding: 9px;
+  }
+
+  .avatar img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+    object-fit: cover;
+    cursor: pointer; 
+  }
+  
+  .avatar-btns {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .avatar-btns .change-btn {
+    padding: 4px 8px;
+    background-color: #007bff2c;
+    border: none;
+    color: #007bff;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.remove-btn {
+    display: flex;
+    background: none;
+    color: #ff0000;
+    border: none;
+    font-weight: 500;
+    height: auto;
+    align-items: center;
+
+}
+.avatar img:hover, .change-btn:hover, .remove-btn:hover {
+    transform: translateY(-7px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .avatar-btns .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #ff0000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .note-warn {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: #fbbc05;
+    position: relative;
+    padding: 8px;
+  }
+  
+  .warning-note {
+    display: flex;
+    max-width: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #fbbc05;
+    color: #fbbc05;
+    font-size: 20px;
+  }
+
+  

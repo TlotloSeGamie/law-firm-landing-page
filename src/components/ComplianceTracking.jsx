@@ -1,6 +1,5 @@
 import {React, useState} from "react";
 import "./ComplianceTracking.css";
-import profile from '../assets/profile-image.png';
 import { Landmark, Scale, Calendar, AlertTriangle   } from "lucide-react";
 
 
@@ -15,20 +14,7 @@ const ComplianceTracking = () => {
 
   return (
     <div className="dashboard-main">
-      {/* Sidebar Menu */} 
       <div className="dashboard-contents">
-        <div className="top-content">
-          <h4>Home "v" <span>Compliance Tracking</span></h4>
-          <div className="profile-bar">
-            <button className="ask-btn">Ask AI</button>
-            <div className="notification">🔔</div>
-            <div className="profile">
-              <img src={profile} alt="profile" />
-            </div>
-          </div>
-        </div>
-        <div className="borders"></div>
-
         <div className="mid-content">
         <div className="business-legal">
           <div className="business-name">
@@ -58,33 +44,40 @@ const ComplianceTracking = () => {
             <div className="report-box">
               <h4>
               Tax Number
-              <Landmark className="inline-block mr-2" color="#0d99ff" />
+              <Landmark size={46} 
+                style={{ color: '#0D99FF', background: '#1ea1ff3f', borderRadius: '50%', padding: '10px' }} 
+          />
               </h4>
-              <p>9098 765 432</p>
+              <p className="tax-no">9098 765 432</p>
             </div>
             <div className="report-box">
               <h4>Annual Return Status
-              <Scale className="inline-block mr-2" />
+              <Scale size={46} 
+                   style={{ color: 'purple', background: 'rgba(128, 0, 128, 0.199)', borderRadius: '50%', padding: '10px' }} 
+           />
               </h4>
               <p>In Business</p>
             </div>
             <div className="report-box">
               <h4>Financial Year End Date
-              <Calendar className="inline-block mr-2" />
+              <Calendar size={46} 
+                style={{ color: '#FBBC05', background: 'rgba(255, 255, 0, 0.144)', borderRadius: '50%', padding: '10px' }} 
+           />
               </h4>
               <p>March 10, 2026</p>
             </div>
             <div className="report-box">
               <h4>Overdue Compliance
-              <AlertTriangle className="inline-block mr-2" />
+              <AlertTriangle size={46} 
+                style={{ color: 'red', background: 'rgba(255, 0, 0, 0.192)', borderRadius: '50%', padding: '10px' }} 
+           />
               </h4>
-              <p>2Tasks Overdue</p>
+              <p className="tasks-left">2 Tasks Overdue</p>
             </div>
           </div>
         </div>
 
-        {/* Last Content Section */}
-        <div className="last-content">
+        <div className="compliance-last-content">
           <div className="content-texts">
              <h3>Compliance Task List </h3> 
              

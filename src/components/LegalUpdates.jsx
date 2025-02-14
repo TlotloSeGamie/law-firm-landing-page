@@ -1,36 +1,18 @@
 import React, { useState } from "react";
 import "./LegalUpdates.css";
-import { FaBell, FaChevronRight, FaSearch } from "react-icons/fa";
-import profile from "../assets/profile-image.png";
+import { FaSearch } from "react-icons/fa";
 import deadline1 from "../assets/Rectangle 232.png";
 import deadline2 from "../assets/Rectangle 232 (2).png";
 import deadline3 from "../assets/Rectangle 232 (1).png";
 
 const LegalUpdates = () => {
   const [query, setQuery] = useState("");
+  const [activeTab, setActiveTab] = useState("all");
+
 
   return (
     <div className="legal-updates-main">
       <div className="legal-updates-container">
-        {/* Top Section */}
-        <div className="top-content">
-          <h4>
-            Home <FaChevronRight size={12} /> <span>Legal Updates</span>
-          </h4>
-          <div className="profile-bar">
-            <button className="ask-btn">Ask AI</button>
-            <div className="notification">
-              <FaBell className="icon" />
-            </div>
-            <div className="profile">
-              <img src={profile} alt="profile" />
-            </div>
-          </div>
-        </div>
-
-        <div className="border"></div>
-
-        {/* Title Section */}
         <div className="legal-updates-text">
           <h2>Stay Compliant with the Latest Legal Updates</h2>
           <p>
@@ -39,7 +21,6 @@ const LegalUpdates = () => {
           </p>
         </div>
 
-        {/* Search Bar */}
         <div className="search-bar">
           <FaSearch className="search-icon" />
           <input
@@ -50,16 +31,44 @@ const LegalUpdates = () => {
           />
         </div>
 
-        {/* Navigation Tabs */}
         <div className="news-nav">
-          <a href="#">All</a>
-          <a href="#compliance">Compliance</a>
-          <a href="#deadlines">Deadlines</a>
-          <a href="#regulations">Regulations</a>
-          <a href="#science">Science</a>
-        </div>
+      <a 
+        href="#" 
+        className={activeTab === "all" ? "active" : ""} 
+        onClick={() => setActiveTab("all")}
+      >
+        All
+      </a>
+      <a 
+        href="#compliance" 
+        className={activeTab === "compliance" ? "active" : ""} 
+        onClick={() => setActiveTab("compliance")}
+      >
+        Compliance
+      </a>
+      <a 
+        href="#deadlines" 
+        className={activeTab === "deadlines" ? "active" : ""} 
+        onClick={() => setActiveTab("deadlines")}
+      >
+        Deadlines
+      </a>
+      <a 
+        href="#regulations" 
+        className={activeTab === "regulations" ? "active" : ""} 
+        onClick={() => setActiveTab("regulations")}
+      >
+        Regulations
+      </a>
+      <a 
+        href="#science" 
+        className={activeTab === "science" ? "active" : ""} 
+        onClick={() => setActiveTab("science")}
+      >
+        Science
+      </a>
+    </div>
 
-        {/* News Section */}
         <div className="news-container">
           {[deadline1, deadline3, deadline2, deadline1, deadline3, deadline2].map(
             (img, index) => (
@@ -71,7 +80,7 @@ const LegalUpdates = () => {
                 </p>
                 <div className="read-btn">
                   <button className="read-more-btn">Read More</button>
-                  <p>99 min ago</p>
+                  <p>9 min ago</p>
                 </div>
               </div>
             )

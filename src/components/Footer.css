@@ -3,6 +3,8 @@
     color: #FFFFFF;
     padding: 40px 20px;
     text-align: center;
+    position: relative;
+    top: 8rem;
 }
 
 .footer-container {
@@ -51,6 +53,20 @@ ul li {
     min-width: 300px;
 }
 
+
+a {
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #666;
+    transform: translateY(-3px); 
+    transition: all 0.3s ease-in-out; 
+}
+
 .subscription h4 {
     text-align: left;
     font-size: 20px;
@@ -97,7 +113,7 @@ ul li {
     transform: translateY(-3px);
 }
 
-.border {
+.footer-border {
     border: 1px solid #fff;
 }
 

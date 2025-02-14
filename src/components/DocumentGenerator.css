@@ -148,7 +148,7 @@
   }
   
   .documents-templates button {
-    background: #ffffff;
+    background: #ddd;
     color: rgb(0, 0, 0);
     border: none;
     padding: 8px 20px;
@@ -158,13 +158,9 @@
   }
   
   .documents-templates button:hover {
-    background: #0077cc;
+    background: #0077cc4e;
   }
-  
-  .compliance-storage h3 {
-    color: #333;
-    font-size: 20px;
-  }
+
   
   .table {
     margin-top: 15px;
@@ -185,7 +181,7 @@
   
   .Document-list th {
     background: #ddd;
-    color: #8b8b8b;
+    color: #666;
     font-weight: bold;
   }
   
@@ -200,6 +196,22 @@
   }
   
   .download:hover {
-    background: #0077cc;
+    background: #007bff;
+    color: #ffff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+  .your-documents, .templates {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .your-documents.active, .templates.active {
+    background-color: #ffff; /* Highlight active button */
+    color: #000;
+    font-weight: normal;
+    border-radius: 6px;
   }
   

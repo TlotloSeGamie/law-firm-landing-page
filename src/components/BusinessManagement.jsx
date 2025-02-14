@@ -17,24 +17,10 @@ const BusinessManagement = () => {
   return (
     <div className="business-main">
       <div className="business-container">
-        <div className="top-content">
-          <h4>
-            Home <FaChevronRight size={12} /> <span>BusinessManagement</span>
-          </h4>
-          <div className="profile-bar">
-            <button className="ask-btn">Ask AI</button>
-            <div className="notification">
-              <FaBell className="w-6 h-6 text-gray-700" />
-            </div>{" "}
-            <div className="profile">
-              <img src={profile} alt="profile" />
-            </div>
-          </div>
-        </div>
-        <div className="mid-content">
+        <div className="business-mid-content">
           <div className="business-overview">
             <div className="business-btns">
-              <div>
+              <div className="business-texts">
                 <h3>Business Management</h3>
                 Overview
               </div>
@@ -61,7 +47,7 @@ const BusinessManagement = () => {
               </div>
               <div className="dropdown">
                 <button
-                  className="select-button"
+                  className="select-btn"
                   onClick={() => setShowOptions(!showOptions)}
                 >
                   {selectedBusiness}
@@ -107,7 +93,7 @@ const BusinessManagement = () => {
             </div>
           </div>
         </div>
-        <div className="borders"></div>
+        <div className="business-borders"></div>
         <div className="table">
           <div className="company-text">
             <h3>

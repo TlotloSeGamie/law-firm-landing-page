@@ -1,0 +1,179 @@
+.subscription-dashboard-main {
+    /* max-width: 900px; */
+    /* margin: 40px auto; */
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+h2 {
+    text-align: left;
+    color: #666;
+}
+
+.subscription-paid {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.subscription-paid div.active {
+    border: 2px solid #007bff; 
+    background-color: #f0f8ff; 
+    color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
+    transform: scale(1.02); 
+    transition: all 0.3s ease-in-out;
+}
+
+.subscription-paid div.active h4{
+    color: #007bff !important;
+    background-color: #007bff34;
+    border: 1px solid #007bff
+}
+.subscription-paid div.active p,
+.subscription-paid div.active a {
+    color: #007bff !important;
+}
+
+.basic-card, .professional-card, .enterprise-card {
+    flex: 1;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.basic-card .pay h4 {
+    width: 30%;
+    border: 0.1px solid #009951;
+    border-radius: 12px;
+    margin: 0;
+    font-size: 20px;
+    color: #009951;
+    background: #00995228;
+}
+
+.professional-card .pay h4 {
+    width: 30%;
+    border: 0.1px solid #0d99ff;
+    border-radius: 12px;
+    margin: 0;
+    font-size: 20px;
+    color: #0d99ff;
+    background: #0d9aff25;
+}
+
+.enterprise-card .pay h4 {
+    width: 30%;
+    border: 0.1px solid #9747ff;
+    border-radius: 12px;
+    margin: 0;
+    font-size: 20px;
+    color: #9747ff;
+    background: #9747ff28;
+}
+
+.pay p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.pay-month {
+    text-align: left;
+}
+
+.upgrade-more {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.upgrade-btn {
+    background-color: #0d99ff;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.upgrade-btn:hover {
+    background-color: #007acc;
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.upgrade-more a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0d99ff;
+    font-size: 14px;
+}
+
+.billing-table {
+    margin-top: 40px;
+}
+
+.table-history {
+    padding: 20px;
+    border: 1px solid #c7c7c7;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+.billing-history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.billing-history th, .billing-history td {
+    padding: 12px;
+    text-align: left;
+}
+
+.billing-history th {
+    background-color: #ddd;
+    color: #333;
+}
+
+.invoice-btn {
+    width: 50%;
+    background-color: #0d9aff50;
+    color: #0d99ff;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #0d99ff;
+}
+
+.invoice-btn:hover {
+    background-color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease-in-out; 
+}

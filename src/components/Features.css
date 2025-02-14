@@ -6,6 +6,8 @@
     align-items: center;
     padding: 60px 20px;
     background: #fff;
+    position: relative;
+    top: 8rem;
 }
 
 .features-container {
@@ -56,6 +58,7 @@
     color: rgb(58, 58, 58);
     text-align: left;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .features-nav li:hover {
